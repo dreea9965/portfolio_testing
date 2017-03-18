@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="decription" content="">
+    <meta name="author" content="Andreea Uta">
+    <meta name = "viewport" content="width=device-width,
+    initial-scale=1.0, user-scalable=1, minimum-scale=1.0,
+    maximum-scale=1.0">
+    <title>Andreea Portfolio</title>
+
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="example.css">
+
+  </head>
+  <body>
+
+<div class ="wrapper">
+    <!-- //Home-view -->
+ <!-- <div class="view">  </div> -->
+      <!-- div that contains the hscroll items -->
+      <div class="surroundContainer">
+        <div class="h1"> View1 </div>
+        <div class="horizon scroll">
+          <img id = "mountain" src="images/website-template3.png" alt="" />
+          <img  src="images/homepage.png" alt="" />
+
+        </div>
+        <div class="middle scroll">
+
+           <img id="name" src="images/name.png" alt="" />
+             <!-- <img src="images/fionafast.jpg" alt=""> -->
+          <img id="alien" src="images/aliensmovie.gif" alt="" />
+          <h2> Aliens- Pygame </h2>
+
+          <div class="about-me">
+            <img src = "images/face2.jpg" alt = "my image" id="profile">
+
+
+            <p> My name is Andreea Uta, and I am an artist, <br>
+              and full-stack developer
+            in the making.
+           </p>
+           <p>
+             For inquiries or any questions please send me an <br>
+             e-mail at dreea.9965@gmail.com.
+           </p>
+
+             <div class="icons">
+
+             <a href= "mailto:someone@example.com?Subject=Hello%20"> <img src= "icons/gmailicon.png"
+                   alt = "gmail"> </a>
+             <a href= "https://www.instagram.com/dreeallama_art/"> <img src= "icons/instagramicon.jpg"
+               alt = "instagram"> </a>
+             <!-- <a href= "https://www.etsy.com/shop/AbstractLlamaArt?ref=hdr_shop_menu"> <img src= "images/etsy.png"
+                   alt = "etsy"> </a> -->
+             <a href= "https://github.com/dreea9965"> <img id="git" src= "icons/github.png"
+                       alt = "github"> </a>
+          </div>
+
+          <button> Home </button>
+
+        </div>
+
+        <div class="front scroll">
+            <!-- <img src="images/cloud.png" alt="" /> -->
+        </div>
+
+        <div class="h2"> View1 </div>
+
+        <div class="h1"> View2 </div>
+
+
+
+
+    </div>
+
+
+
+
+</div>
+
+
+<script type="text/javascript" src="libs/jquery.min.js"></script>
+<script type="text/javascript" src="dist/js/jquery.jInvertScroll.js"></script>
+<script type="text/javascript">
+(function($) {
+    $.jInvertScroll(['.scroll'],        // an array containing the selector(s) for the elements you want to animate
+        {
+        height: 6000,                   // optional: define the height the user can scroll, otherwise the overall length will be taken as scrollable height
+        onScroll: function(percent) {   //optional: callback function that will be called when the user scrolls down, useful for animating other things on the page
+            console.log(percent);
+        }
+    });
+}(jQuery));
+</script>
+
+  </body>
+</html>
