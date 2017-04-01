@@ -50,10 +50,35 @@ h1
   width: 5000px;
 }
 
-
+#home {
+  z-index: 700;
+}
 
 .front
 {
   z-index: 200;
   width: 7000px;
+}
+
+
+@media (max-width: 375px) {
+
+
+
+.horizon
+{
+left: 4500px;
+ opacity: 0.9;
+}
+
+.middle
+{
+  width: 4500px;
+}
+
+
+.front
+{
+left: 4500px;}
+
 }

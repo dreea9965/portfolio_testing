@@ -1,4 +1,5 @@
 * {
+  box-sizing: border-box;
   margin:0;
 }
 
@@ -6,6 +7,13 @@ html, body {
   height: 100%;
 
 }
+
+#background {
+  height: 100vh;
+  /*background-image: url("images/fullpage2.png");*/
+}
+
+
 
 .wrapper {
   height: 100%;
@@ -46,8 +54,11 @@ html, body {
 
 .h2 {
   display: inline-block;
-  height: 80%; width: 60%;
-  background-color: #9D8997;
+  /*height: 80%; width: 60%;*/
+  position: relative;
+  top: 95vh;
+  left: 43vw;
+  /*background-color: darkgray;*/
 }
 
 /*#306196*/
@@ -68,46 +79,107 @@ html, body {
 
 }
 
+#scroll-title {
+  position: relative;
+  right: 10vw;
+}
+
+#skill-icon-1 {
+  display: inline-block;
+  position: relative;
+  bottom: 75vh;
+  left: 10vw;
+  opacity: .7;
+  /*background-color: #ACABA9;*/
+  border-radius: 25px;
+
+
+
+  /*margin-left: 20px;*/
+  /*background-color: rgba(255, 0, 0, 0.2);*/
+
+}
+
+#skill-icon-1 img, #skill-icon-2 img {
+  width: 500px;
+}
+
+#skill-icon-2 {
+  display: inline-block;
+  position: relative;
+  bottom: 55vh;
+  right: 30vw;
+  opacity: .7;
+  /*background-color: #ACABA9;*/
+  border-radius: 25px;
+
+}
 /*.projects {
   display: inline-block;
   margin-left: 500px;
   height: 98%;
-  border: 3px solid black;
+  border: 3px solid darkgray;
 
 }*/
 
-#alien {
-  /*margin-top: 10px;*/
-  margin-left: 600px;
-  opacity: .8;
-  height: 300px;
-  margin-bottom: 40vh;
-  border: 2px solid white;
-  padding: 20px;
-  background-color:#9D8997;
+a {
+  border: none;
+}
 
+#alien {
+  margin-left: 120px;
+  opacity: .8;
+  margin-bottom: 50vh;
+  border: 2px solid white;
+  padding: 10px;
+  background-color:darkgray;
+
+}
+a:hover #alien {
+  background-image: url("images/aliensmovie.gif");
 }
 
 #tictactoe {
   margin-left: 65px;
   opacity: .8;
-  /*height: 400px;*/
-  margin-bottom: 30vh;
+  margin-bottom: 50vh;
   border: 2px solid white;
-  padding: 20px;
-  background-color:#9D8997;
+  padding: 10px;
+  background-color:darkgray;
 
 }
+
+#blackjack {
+  margin-left: 65px;
+  opacity: .8;
+  margin-bottom: 50vh;
+  border: 2px solid white;
+  padding: 10px;
+  background-color: darkgray;
+
+}
+
+/*darkgray --> purple color*/
+
+/*.middle img {
+  margin-left: 65px;
+  opacity: .8;
+  margin-bottom: 50vh;
+  border: 2px solid white;
+  padding: 10px;
+  background-color: darkgray;
+
+}*/
 
 h5 {
   display: inline-block;
   position: relative;
-  right: 28vw;
-  bottom: 45vh;
-  /*background-color: rgba(230, 40, 160, 0.6);*/
-  background-color: #9D8997;
-  border: 1px solid white;
-  padding: 15px;
+  right: 7vw;
+  bottom: 50vh;
+  background-color: rgba(255, 255, 255, 0.4);
+  /*background-color: darkgray;*/
+  letter-spacing: .4em;
+  padding: 10px;
 }
 
 
@@ -129,32 +201,204 @@ h5 {
 .about-me {
   display: inline-block;
   position: relative;
-  left: 90vw;
+  left: 14vw;
   bottom: 16vh;
-  line-height: 2.3em;
-  border: 2px solid white;
+  line-height: 1.7em;
+  /*border: 2px solid white;*/
   text-align: center;
-  padding: 30px 30px 0 30px;
-  background-color: #9D8997;
+  padding-top: 20px;
+  padding-bottom: 10px;
   color: black;
-  font-size: .8em;
+  background-color: darkgray;
+  opacity: 0.7;
+  font-size: 1.0em;
+
+}
+
+.about-me p {
+
+  /*background-color: rgba(255, 0, 0, 0.2);*/
+  opacity: 0.7;
+  padding: 10px;
 
 }
 
 
 .icons a{
   padding: 7px;
+  padding-top: 5px;
 }
 
 
 
-button {
+#home{
   position: relative;
-  bottom: 30vh;
+  bottom: 45vh;
   left: 74vw;
   padding: 10px;
-  background-color:  #9D8997;
+  background-color:  darkgray;
   color: white;
   border-radius: 15px;
   font-size: 1.0em;
+  text-decoration: none;
+
+}
+
+
+@media (max-width: 375px) {
+
+  #background {
+    width: 4500px;
+    height: 100vh;
+
+  }
+
+  .surroundContainer {
+    height: 100%;
+    width: 4500px;
+    white-space: nowrap;
+    /*background-image: url("images/succulent-right.png");*/
+    background-repeat: repeat-x;
+
+  }
+
+  #name {
+    position: relative;
+    left: 35vw;
+    bottom: 60vh;
+    width: 200px;
+    padding-left: 10px;
+    margin-right: 10px;
+    padding-bottom: 10px;
+
+  }
+
+
+  #skill-icon-1 {
+    display: inline-block;
+    position: relative;
+    bottom: 63vh;
+    right: 10vw;
+    opacity: .7;
+    /*margin-right: 40vw;*/
+    /*background-color: #ACABA9;*/
+    border-radius: 25px;
+    width: 100px;
+
+  }
+
+  #skill-icon-1 img, #skill-icon-2 img {
+    width: 300px;
+  }
+
+  #skill-icon-2 {
+    display: inline-block;
+    position: relative;
+    bottom: 80vh;
+    margin-left: 15vw;
+    opacity: .7;
+    /*background-color: #ACABA9;*/
+    border-radius: 25px;
+
+  }
+
+  #alien {
+    margin-right: 10px;
+    margin-bottom: 50vh;
+    position: relative;
+    left: 8vw;
+    display: inline-block;
+    opacity: .8;
+    width: 150px;
+    padding: 10px;
+  }
+
+  #tictactoe {
+    position: relative;
+    right: 20vw;
+    margin-left: 10px;
+    opacity: .8;
+    width: 150px;
+    margin-bottom: 50vh;
+    border: 2px solid white;
+    padding: 10px;
+    background-color:darkgray;
+
+  }
+
+  #blackjack {
+    position: relative;
+    right: 35vw;
+    margin-left: 10px;
+    opacity: .8;
+    margin-bottom: 50vh;
+    border: 2px solid white;
+    padding: 10px;
+    background-color: darkgray;
+    width: 150px;
+
+
+  }
+
+
+
+  h5 {
+    display: inline-block;
+    position: relative;
+    right: 20vw;
+    bottom: 50vh;
+    background-color: rgba(255, 255, 255, 0.4);
+    /*background-color: darkgray;*/
+    letter-spacing: .2em;
+    font-size: .6em;
+    padding: 10px;
+  }
+
+
+  .about-me {
+    display: inline-block;
+    position: relative;
+    left: 53vw;
+    bottom: 30vh;
+    line-height: 1.7em;
+    /*border: 2px solid white;*/
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    color: black;
+    background-color: darkgray;
+    opacity: 0.7;
+    font-size: .7em;
+    width: 70vw;
+
+  }
+
+  #profile {
+    width: 200px;
+  }
+
+  #home{
+    position: relative;
+    left: 10vw;
+    bottom: 10vh;
+
+  }
+
+
+
+  .h1 img {
+    z-index: 1000;
+    position: relative;
+    top: 50vh;
+    opacity: .6;
+    clear: both;
+  }
+
+
+}
+
+
+
+@media all and (max-width: 370px) {
+    .h1, .h2 { display: none; }
 }

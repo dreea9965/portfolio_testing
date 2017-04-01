@@ -4,13 +4,18 @@
     <meta charset="utf-8">
     <meta name="decription" content="">
     <meta name="author" content="Andreea Uta">
+
     <meta name = "viewport" content="width=device-width,
     initial-scale=1.0, user-scalable=1, minimum-scale=1.0,
     maximum-scale=1.0">
     <title>Andreea Portfolio</title>
 
-<link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="example.css">
+
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="animate.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+
 
   </head>
   <body>
@@ -20,26 +25,61 @@
  <!-- <div class="view">  </div> -->
       <!-- div that contains the hscroll items -->
       <div class="surroundContainer">
-        <div class="h1"> <img src="images/hotairballoon.png"> </div>
+        <div class="h1"> <img src="images/airballoon.png"> </div>
+
         <div class="horizon scroll">
-          <img id = "mountain" src="images/fullpage.png" alt="" />
+          <img id = "background" src="images/fullpage2.png" alt="" />
           <!-- <img  src="images/homepage.png" alt="" /> -->
 
         </div>
         <div class="middle scroll">
 
 
-           <img id="name" src="images/name.png" alt="" />
+
+          <a name = "home">  <img id="name" src="images/name.png" alt="" /> </a>
+           <img id= "scroll-title" class= "animated rotateOutDownRight" src = "icons/scroll.png">
              <!-- <img src="images/fionafast.jpg" alt=""> -->
 
+            <!-- Skills -->
+            <div id="skill-icon-1">
+              <img class="skill-icon" src="icons/row1.png" alt="">
+
+              <!-- <img class="skill-icon" src="icons/python.png" alt="">
+              <img class="skill-icon" src="icons/js.png" alt="">
+              <img class="skill-icon" src="icons/node.png" alt="">
+              <img class="skill-icon" src="icons/jquery.png" alt=""> -->
+
+            </div>
+            <div id="skill-icon-2">
+              <img class="skill-icon" src="icons/row2.png" alt="">
+
+              <!-- <img class="skill-icon" src="icons/html.png" alt="">
+              <img class="skill-icon" src="icons/css.png" alt="">
+              <img class="skill-icon" src="icons/bootstrap.png" alt="">
+              <img class="skill-icon" src="icons/mysql.png" alt=""> -->
+
+            </div>
+
       <!-- <div class="projects"> -->
-          <img id="alien" src="images/aliensmovie.gif" alt="" />
+      <a href="default.asp">
+
+          <img id="alien" class = "project-link" src="images/aliens.png" alt="" />
+        </a>
           <h5 > Aliens- Pygame </h5>
 
-          <img id="tictactoe" src="images/tic-tac-toe.png" alt="" />
-          <h5> Tic-Tac-Toe </h5>
-      <!-- </div> -->
 
+      <a href="tic-tac-toe/tictactoe.html">
+          <img id="tictactoe"  class = "project-link" src="images/tic-tac-toe.png" alt="" />
+        </a>
+
+          <h5> Tic-Tac-Toe </h5>
+
+      <!-- </div> -->
+    <a href="blackjack/index.html">
+        <img id="blackjack" class = "project-link" src="images/blackjack.png" alt="" />
+      </a>
+
+        <h5> BlackJack </h5>
           <div class="about-me">
             <img src = "images/face2.jpg" alt = "my image" id="profile">
 
@@ -64,7 +104,10 @@
                        alt = "github"> </a>
           </div>
 
-          <button src="#name"> Home </button>
+        </div>
+
+           <a href= "#name" id = "home"> Home </a>
+
         </div>
 
 
@@ -72,14 +115,15 @@
             <!-- <img src="images/cloud.png" alt="" /> -->
         </div>
 
-        <div class="h2"> View1 </div>
+  </div>
 
-        <div class="h1"> View2 </div>
+        <div class="h2">
+        <img src="images/birdy.png" alt=""> </div>
+
+        <div class="h1"> OTHERONE </div>
 
 
 
-
-    </div>
 
 
 
@@ -99,6 +143,18 @@
         }
     });
 }(jQuery));
+
+
+
+// $('a[href^="#"]').on('click', function(event) {
+//     var target = $(this.getAttribute('href'));
+//     if( target.length ) {
+//         event.preventDefault();
+//         $('html, body').stop().animate({
+//             scrollTop: target.offset().top
+//         }, 1000);
+//     }
+// });
 </script>
 
   </body>
