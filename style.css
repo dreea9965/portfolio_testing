@@ -6,10 +6,12 @@
 html, body {
   height: 100%;
 
+
 }
 
 #background {
   height: 100vh;
+  width: 7252px;
   /*background-image: url("images/fullpage2.png");*/
 }
 
@@ -56,7 +58,7 @@ html, body {
   display: inline-block;
   /*height: 80%; width: 60%;*/
   position: relative;
-  top: 95vh;
+  top: 110vh;
   left: 43vw;
   /*background-color: darkgray;*/
 }
