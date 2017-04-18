@@ -63,22 +63,32 @@ h1
 
 @media (max-width: 375px) {
 
+.scroll
+  {
+    position: static;
+    bottom: 0;
+    left: 0;
+  }
 
+  .horizon
+  {
+    z-index: 0;
+    width: 400px;
+    opacity: 0.9;
+  }
 
-.horizon
-{
-left: 4500px;
- opacity: 0.9;
-}
+  .middle
+  {
+    z-index: 0;
+    width: 400px;
+  }
 
-.middle
-{
-  width: 4500px;
-}
+  #home {
+    z-index: 0;
+  }
 
-
-.front
-{
-left: 4500px;}
-
-}
+  .front
+  {
+    z-index: 0;
+    width: 400px;
+  }

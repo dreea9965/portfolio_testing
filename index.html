@@ -15,7 +15,11 @@
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="animate.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+<link href="https://fonts.googleapis.com/css?family=Covered+By+Your+Grace|Poppins" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 
+
+<!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script> -->
 
   </head>
   <body>
@@ -29,82 +33,90 @@
 
         <div class="horizon scroll">
           <img id = "background" src="images/fullpage2.png" alt="" />
+          <img id = "background-mobile" src="images/fullpagedown3.png" alt="" />
+
           <!-- <img  src="images/homepage.png" alt="" /> -->
+          <!-- <img id = "background-mobile" src="images/fullpage2.png" alt="" /> -->
 
         </div>
         <div class="middle scroll">
 
 
 
-          <a name = "home">  <img id="name" src="images/name.png" alt="" /> </a>
-           <img id= "scroll-title" class= "animated rotateOutDownRight" src = "icons/scroll.png">
-             <!-- <img src="images/fionafast.jpg" alt=""> -->
+          <a name = "home">  <img id="name" src="images/name2.png" alt=""  </a>
+          <!-- <div id="name">
+            Andreea Uta <br>
+          <span id="subname">  front end developer </span>
+          </div> -->
+           <!-- <img id= "scroll-title" class= "animated rotateOutDownRight" src = "icons/scroll.png"> -->
+          <div id= "scroll-title">
+            <!-- <span style = "color: white"> -->
 
+
+            SCROLL UP AND DOWN
+          </div>
             <!-- Skills -->
             <div id="skill-icon-1">
-              <img class="skill-icon" src="icons/row1.png" alt="">
-
-              <!-- <img class="skill-icon" src="icons/python.png" alt="">
-              <img class="skill-icon" src="icons/js.png" alt="">
-              <img class="skill-icon" src="icons/node.png" alt="">
-              <img class="skill-icon" src="icons/jquery.png" alt=""> -->
-
-            </div>
-            <div id="skill-icon-2">
-              <img class="skill-icon" src="icons/row2.png" alt="">
-
-              <!-- <img class="skill-icon" src="icons/html.png" alt="">
-              <img class="skill-icon" src="icons/css.png" alt="">
-              <img class="skill-icon" src="icons/bootstrap.png" alt="">
-              <img class="skill-icon" src="icons/mysql.png" alt=""> -->
+              <img  src="icons/skills.png" alt="">
 
             </div>
 
-      <!-- <div class="projects"> -->
-      <a href="default.asp">
 
-          <img id="alien" class = "project-link" src="images/aliens.png" alt="" />
-        </a>
-          <h5 > Aliens- Pygame </h5>
+      <a href="default.html" class="drawing_things">
 
-
-      <a href="tic-tac-toe/tictactoe.html">
-          <img id="tictactoe"  class = "project-link" src="images/tic-tac-toe.png" alt="" />
         </a>
 
-          <h5> Tic-Tac-Toe </h5>
 
-      <!-- </div> -->
-    <a href="blackjack/index.html">
-        <img id="blackjack" class = "project-link" src="images/blackjack.png" alt="" />
+      <a href="http://smarta.andreeauta.com/" class="smarta">
+
       </a>
 
-        <h5> BlackJack </h5>
-          <div class="about-me">
-            <img src = "images/face2.jpg" alt = "my image" id="profile">
+      <a href="tic-tac-toe/tictactoe.html" class="tictactoe">
 
+
+        </a>
+
+
+    <a href="blackjack/index.html" class="blackjack">
+      </a>
+
+
+
+
+          <div class="about-me">
+            <img src = "images/face.png" alt = "my image" id="profile">
 
             <p> My name is Andreea Uta, and I am an artist, <br>
               and full-stack developer
             in the making.
             <br>
-             For inquiries or any questions please send me an <br>
-             e-mail at dreea.9965@gmail.com.
+             For inquiries or any questions
+             <br> send me an
+             e-mail at
+             <br>dreea.9965@gmail.com.
+            <br>
+            <br>
+            <br>
+
            </p>
+
 
              <div class="icons">
 
-             <a href= "mailto:someone@example.com?Subject=Hello%20"> <img src= "icons/gmailicon.png"
+             <a href= "mailto:someone@example.com?Subject=Hello%20"> <img src= "icons/gmail.png"
                    alt = "gmail"> </a>
-             <a href= "https://www.instagram.com/dreeallama_art/"> <img src= "icons/instagramicon.png"
+             <a href= "https://www.instagram.com/dreeallama_art/"> <img src= "icons/instagram.png"
                alt = "instagram"> </a>
              <!-- <a href= "https://www.etsy.com/shop/AbstractLlamaArt?ref=hdr_shop_menu"> <img src= "images/etsy.png"
                    alt = "etsy"> </a> -->
-             <a href= "https://github.com/dreea9965"> <img id="git" src= "icons/github.png"
+             <a href= "https://github.com/dreeauta"> <img id="git" src= "icons/github.png"
                        alt = "github"> </a>
           </div>
 
+          <a id ="resume" href="resume.html"> Resume</a>
+
         </div>
+
 
            <a href= "#name" id = "home"> Home </a>
 
@@ -120,7 +132,7 @@
         <div class="h2">
         <img src="images/birdy.png" alt=""> </div>
 
-        <div class="h1"> OTHERONE </div>
+        <div class="h1"> <span style="opacity:0">  AU </span> </div>
 
 
 
@@ -134,27 +146,52 @@
 <script type="text/javascript" src="libs/jquery.min.js"></script>
 <script type="text/javascript" src="dist/js/jquery.jInvertScroll.js"></script>
 <script type="text/javascript">
-(function($) {
-    $.jInvertScroll(['.scroll'],        // an array containing the selector(s) for the elements you want to animate
-        {
-        height: 6000,                   // optional: define the height the user can scroll, otherwise the overall length will be taken as scrollable height
-        onScroll: function(percent) {   //optional: callback function that will be called when the user scrolls down, useful for animating other things on the page
-            console.log(percent);
-        }
+
+
+
+
+
+  (function($) {
+
+    if ( $(window).width() > 768) {
+      $.jInvertScroll(['.scroll'],        // an array containing the selector(s) for the elements you want to animate
+          {
+          height: 6000,                   // optional: define the height the user can scroll, otherwise the overall length will be taken as scrollable height
+          onScroll: function(percent) {   //optional: callback function that will be called when the user scrolls down, useful for animating other things on the page
+              console.log(percent);
+          }
+      });
+
+
+    $(window).bind('scroll', function() {
+         if ($(window).scrollTop() > 120) {
+            //  $('#name').hide();
+             $('#scroll-title').hide();
+
+         }
+         else {
+             $('#scroll-title').show();
+         }
     });
-}(jQuery));
+
+    $(window).bind('scroll', function() {
+         if ($(window).scrollTop() < 6010) {
+            //  $('#name').hide();
+             $('.about-me').hide();
+
+         }
+         else {
+             $('.about-me').show();
+         }
+    });
+}
+
+  }(jQuery));
 
 
 
-// $('a[href^="#"]').on('click', function(event) {
-//     var target = $(this.getAttribute('href'));
-//     if( target.length ) {
-//         event.preventDefault();
-//         $('html, body').stop().animate({
-//             scrollTop: target.offset().top
-//         }, 1000);
-//     }
-// });
+
+
 </script>
 
   </body>
