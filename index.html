@@ -28,6 +28,10 @@
     <!-- //Home-view -->
  <!-- <div class="view">  </div> -->
       <!-- div that contains the hscroll items -->
+
+      <!-- <div class="menu">
+        <img src="images/menu-bar.png" alt="">
+      </div> -->
       <div class="surroundContainer">
         <div class="h1"> <img src="images/airballoon.png"> </div>
 
@@ -62,7 +66,7 @@
             </div>
 
 
-      <a href="default.html" class="drawing_things">
+      <a href="http://drawing-things.andreeauta.com" class="drawing_things">
 
         </a>
 
@@ -158,9 +162,10 @@
           {
           height: 6000,                   // optional: define the height the user can scroll, otherwise the overall length will be taken as scrollable height
           onScroll: function(percent) {   //optional: callback function that will be called when the user scrolls down, useful for animating other things on the page
-              console.log(percent);
           }
       });
+
+
 
 
     $(window).bind('scroll', function() {
@@ -187,6 +192,8 @@
 }
 
   }(jQuery));
+
+
 
 
 

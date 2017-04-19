@@ -11,7 +11,7 @@ body
 body
 {
   overflow-x: hidden;
-  background: url('../images/bg.jpg') repeat top left;
+
 }
 
 h1
@@ -61,7 +61,7 @@ h1
 }
 
 
-@media (max-width: 375px) {
+@media (max-width: 500px) {
 
 .scroll
   {
