@@ -125,7 +125,7 @@ html, body {
   /*bottom: 3vh;*/
   left: 70vw;
   /*background-color: rgba(0, 0, 0, 0.4);*/
-  width: 500px;
+  width: 400px;
   height: 90vh;
 
 
@@ -281,7 +281,7 @@ a {
 
 .icons a{
   position: relative;
-  bottom: 5vh;
+  bottom: 10vh;
   padding: 7px;
   margin-top: 5%;
   right: 2vw;
@@ -292,7 +292,7 @@ a {
 
 .icons a:hover{
   position: relative;
-  bottom: 5vh;
+  /*bottom: 10vh;*/
   padding: 7px;
   margin-top: 5%;
   filter: invert(100%);
