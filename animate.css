@@ -239,7 +239,14 @@
 .rubberBand {
   -webkit-animation-name: rubberBand;
   animation-name: rubberBand;
+  -webkit-animation-duration: 5s;
+  animation-duration: 3s;
+  -webkit-animation-delay: 3s;
+  animation-delay: 2s;
+  /*-webkit-animation-iteration-count: infinite;*/
+
 }
+
 
 @-webkit-keyframes shake {
   from, to {
