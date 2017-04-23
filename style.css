@@ -1,104 +1,65 @@
-@media(min-width: 1280px){
 
+/*example style sheet*/
 
-  body, html, .wrapper {
-    width: 100%;
+html,
+body
+{
+  padding: 0;
+  margin: 0;
 
-  }
+  font-family: Arial, sans-serif;
+}
 
-  .horizon {
-    height: 100vh;
-    width: 100%;
-    background-image: url("images/fullpage3-1280.jpg");
-
-    background-size: cover;
-    background-position: left;
-    /*background-repeat: no-repeat;*/
-  }
-
-  /*.projects {
-    display: inline-block;
-    position: relative;
-    left: 30vw;
-  }*/
-
-
-
-  .about-me {
-    display: inline-block;
-    position: relative;
-    left: 280vw;
-    top: 40vh;
-    /*bottom: 14vh;*/
-    line-height: 1.7em;
-    height: 90vh;
-    width: 35vw;
-    /*border: 2px solid white;*/
-    text-align: center;
-    padding-top: 50vh;
-    /*padding-bottom: 10px;*/
-    color: black;
-    /*background-color: rgba(0, 0, 0, 0.4);*/
-
-    /*opacity: 0.7;*/
-    font-size: 1.0em;
-  }
-
-
-
-
-  .h2 {
-    display: inline-block;
-    /*height: 80%; width: 60%;*/
-    position: relative;
-    top: 120vh;
-    left: 80vw;
-    z-index: 1000;
-    /*background-color: darkgray;*/
-  }
-
-  }
-
+/* hide horizontal scrollbars, since we use the vertical ones to scroll to the right */
+body
+{
+  overflow-x: hidden;
 
 }
 
-@media(min-width: 1366px){
-
-
-  .horizon {
-    height: 800px;
-    /*width: 7252px;*/
-    width: 9562px;
-    background-image: url("images/fullpage3-1366.jpg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    /*background-position: center;*/
-
-
-  }
-
-
-
-
+h1
+{
+  font-size: 20px;
+  font-weight: normal;
+  color: #2e6e80;
 }
 
-@media(min-width: 1920px){
-
-
-  .horizon {
-    height: 100vh;
-    /*width: 7252px;*/
-    width: 13440px;
-    background-image: url("images/fullpage3-1920.jpg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-
-
-  }
-
-
+/**
+  * important: keep position fixed, you can however use top:0 instead of bottom:0
+  * if you want to make it stick to the top of the browser
+  */
+.scroll
+{
+  position: fixed;
+  bottom: 0;
+  left: 0;
 }
+
+/**
+  * z-index ordering of the different layers, do this for your layers,
+  * also assign absolute width (to prevent issues if the script gets executed before the images get loaded)
+  */
+
+.horizon
+{
+  z-index: 1;
+  width: 7252px;
+  height: 100vh;
+}
+
+.middle
+{
+  z-index: 500;
+  width: 5000px;
+}
+
+#home {
+  z-index: 700;
+}
+
+
+
+
 
 * {
   box-sizing: border-box;
@@ -113,12 +74,8 @@ html, body {
 
 
 
-.horizon {
+#background {
   height: 100vh;
-  /*width: 7252px;*/
-  width: 7252px;
-  background-image: url("images/fullpage2.jpg");
-  background-size: cover;
 }
 
 #background-mobile {
@@ -131,10 +88,6 @@ html, body {
 
 }
 
-/*.view {
-  height: 100%;
-  background-color: red;
-}*/
 
 .surroundContainer {
   height: 100%;
@@ -144,13 +97,7 @@ html, body {
 
 }
 
-.menu {
-  position: fixed;
-  bottom: 5vh;
-  left: 30vw;
-  z-index: 5000;
 
-}
 
 
 .h1 {
@@ -193,12 +140,6 @@ html, body {
 
 }
 
-/*#subname {
-  font-size: 0.4em;
-  position: relative;
-  left: 3vw;
-  bottom: 5vh;
-}*/
 
 #scroll-title {
   display: inline-block;
@@ -229,47 +170,28 @@ html, body {
   position: relative;
   /*bottom: 3vh;*/
   left: 70vw;
-  /*background-color: rgba(0, 0, 0, 0.4);*/
-  width: 400px;
   height: 90vh;
 
 
-  /*margin-left: 20px;*/
-  /*background-color: rgba(255, 0, 0, 0.2);*/
-
 }
 
-/*#skill-icon-1 img, #skill-icon-2 img {
-  width: 500px;
-  background-color: rgba(0, 0, 0, 0.4);
+#skill-icon-1 img {
+  width: 37vw;
+}
 
-
-}*/
-
-
-
-/*#skill-icon-2 {
+#skill-title {
   display: inline-block;
   position: relative;
-  bottom: 55vh;
-  opacity: .7;
+  left: 85vw;
+  top: 40vh;
+}
 
-}*/
-/*.projects {
-  display: inline-block;
-  margin-left: 500px;
-  height: 98%;
-  border: 3px solid darkgray;
-
-}*/
-/*
-a {
-  border: none;
-}*/
 
 .projects {
   display: inline-block;
 }
+
+
 
 .drawing_things {
   position: relative;
@@ -284,8 +206,6 @@ a {
 
 
 .drawing_things:hover {
-  /*width: 15vw;
-  height: 36vh;*/
   background-image: url(images/drawingthings-hover.png);
 
 }
@@ -345,7 +265,12 @@ a {
 }
 
 
-
+#project-title {
+  display: inline-block;
+  position: relative;
+  left: 100vw;
+  top: 40vh;
+}
 
 
 #profile {
@@ -353,25 +278,25 @@ a {
   bottom: 38vh;
   opacity: 0.7;
   right: 2vw;
-
 }
+
+
 
 .about-me {
   display: inline-block;
   position: relative;
-  left: 180vw;
-  top: 40vh;
+  left: 145vw;
+  top: 50vh;
   /*bottom: 14vh;*/
   line-height: 1.7em;
-  height: 90vh;
+  height: 100vh;
   width: 35vw;
   /*border: 2px solid white;*/
   text-align: center;
   padding-top: 50vh;
   /*padding-bottom: 10px;*/
   color: black;
-  /*background-color: rgba(0, 0, 0, 0.4);*/
-
+  /*background-color: rgba(255, 255, 255, 0.4);*/
   /*opacity: 0.7;*/
   font-size: 1.0em;
 }
@@ -396,8 +321,6 @@ a {
   right: 2vw;
   text-decoration: none;
 
-  /*filter: invert(100%);*/
-
 }
 
 .icons a:hover{
@@ -411,33 +334,30 @@ a {
 
 #resume {
   text-decoration: none;
-  position: absolute;
-  left: 9.5vw;
-  top: 87vh;
   font-size: 1.2em;
-  /*background-color: rgba(0, 0, 0, 0.4);*/
   margin-top: 3vh;
   padding: 1vw;
   letter-spacing: .3em;
   font-family: 'Poppins', sans-serif;
   letter-spacing: .5em;
   color: black;
+  background-color: rgba(255, 255, 255, 0.4);
 }
-
 
 
 
 #resume:hover{
   background-color: none;
-  color: white;
+  /*filter: invert(100%);*/
+  color: black;
+  font-size: 1.3em;
 }
 
 
 
 #home{
   position: relative;
-  /*bottom: 45vh;*/
-  left: 233vw;
+  left: 208vw;
   padding: 10px;
   background-color: rgba(0, 0, 0, 0.4);
   color: white;
@@ -455,27 +375,339 @@ a {
 }
 
 
-@media(max-width: 550px) {
+@media(max-width: 350px) {
 
-
-  /*#background {
+  #background {
     display: none;
-  }*/
-
-  .horizon {
-    display: inline-block;
-    height: 410vh;
-    width: 100vw;
-    background-size: cover;
-    background-image: url("images/fullpage-down2copy.png");
 
   }
 
 
-  .wrapper {
-    /*height: 2750px;*/
-    /*height: 410vh;*/
 
+  .horizon {
+    display: inline-block;
+    height: 400vh;
+    width: 100%;
+    background-size: cover;
+    background-image: url("images/fullpage-down2copy.png");
+    overflow: hidden;
+
+  }
+
+  #skill-title, #project-title {
+    display: none;
+  }
+
+
+  .wrapper, body, html {
+    /*height: 2750px;*/
+    /*height: 400vh;*/
+    width: 100%;
+
+
+  }
+
+  /*.view {
+    height: 100%;
+    background-color: red;
+  }*/
+
+  .surroundContainer {
+    height: 100%;
+    width: 100%;
+    white-space: nowrap;
+    /*background-image: url("images/succulent-right.png");*/
+    /*background-repeat: repeat-x;*/
+    background-repeat: no-repeat;
+
+  }
+
+  .h1 {
+    display: none;
+
+  }
+
+
+
+
+  .h2 {
+    display: none;
+  }
+
+
+  #name {
+    position: absolute;
+    left: 16vw;
+    top: 3vh;
+    /*font-family: 'Covered By Your Grace', cursive;*/
+    display: inline-block;
+    height: 30vh;
+
+  }
+
+
+
+  #scroll-title {
+    display: none;
+
+
+  }
+
+
+
+
+  #skill-icon-1 {
+    display: inline-block;
+    position: absolute;
+    /*bottom: 3vh;*/
+    left: 18vw;
+    top: 115vh;
+    /*background-color: rgba(0, 0, 0, 0.4);*/
+
+
+  }
+
+#skill-icon-1 img {
+  width: 75vw;
+
+}
+
+
+  .drawing_things {
+    position: absolute;
+    left: 15vw;
+    top: 210vh;
+    opacity: .8;
+    display: inline-block;
+    width: 100%;
+    height: 35vh;
+    background-image: url(images/drawingthings-mobile.png);
+    background-repeat: no-repeat;
+  }
+
+
+  .drawing_things:hover {
+    /*width: 15vw;
+    height: 36vh;*/
+    background-image: url(images/drawingthings-hover.png);
+
+  }
+
+  .smarta {
+    position: absolute;
+    display: inline-block;
+    top: 210vh;
+    left: 60vw;
+    background-image: url(images/smarta2-mobile.png);
+    width: 100%;
+    height: 35vh;
+    opacity: .8;
+    background-repeat: no-repeat;
+  }
+
+  .smarta:hover {
+    background-image: url(images/smarta-hover.png);
+    /*width: 15vw;
+    height: 36vh;*/
+  }
+
+
+
+  .tictactoe {
+    position: absolute;
+    left: 15vw;
+    /*margin-left: 65px;*/
+    top: 240vh;
+    opacity: .8;
+    display: inline-block;
+    background-image: url(images/tic-tac-toe2-mobile.png);
+    width: 100%;
+    height: 35vh;
+    background-repeat: no-repeat;
+  }
+
+  .tictactoe:hover {
+    /*width: 15vw;
+    height: 36vh;*/
+    background-image: url(images/tic-tac-toe-hover2.png);
+  }
+
+
+  .blackjack {
+    position: absolute;
+    left: 60vw;
+    top: 240vh;
+    opacity: .8;
+    display: inline-block;
+    background-image: url(images/blackjack2-mobile.png);
+    width: 100%;
+    height: 35vh;
+    background-repeat: no-repeat;
+
+  }
+
+  .blackjack:hover {
+    background-image: url(images/blackjack2-hover.png);
+  }
+
+
+
+
+
+  #profile {
+    position: relative;
+    bottom: 50vh;
+    /*bottom: 38vh;*/
+    opacity: 0.7;
+    right: 3vw;
+    width: 30vw;
+
+  }
+
+  .about-me {
+    display: inline-block;
+    position: absolute;
+    left: 10vw;
+    top: 315vh;
+    /*bottom: 14vh;*/
+    line-height: 1.2em;
+    height: 20vh;
+    width: 20vw;
+    /*border: 2px solid white;*/
+    text-align: left;
+    padding-top: 50vh;
+    color: black;
+
+    /*font-size: .9em;*/
+  }
+
+  .about-me p {
+    display: inline-block;
+    position: absolute;
+    left: 33vw;
+    top: 1vh;
+    opacity: 0.7;
+    font-size: 0.4em;
+    font-family: 'Poppins', sans-serif;
+
+  }
+
+
+  .icons a{
+    position: relative;
+    bottom: 48vh;
+    padding: 5px;
+    margin-top: 5%;
+    left: 35vw;
+    /*filter: invert(100%);*/
+
+  }
+
+  .icons img {
+    width: 6vw;
+  }
+
+  .icons a:hover{
+    position: relative;
+    bottom: 5vh;
+    padding: 7px;
+    margin-top: 5%;
+    filter: invert(100%);
+
+  }
+
+  #resume {
+    text-decoration: none;
+    position: absolute;
+    left: 1vw;
+    top: 17vh;
+    font-size: .8em;
+    margin-top: 3vh;
+    /*padding: 1vw;*/
+    letter-spacing: .3em;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: .5em;
+  }
+
+
+
+
+  #resume:hover{
+    background-color: none;
+    color: white;
+  }
+
+
+
+  #home{
+    position: relative;
+    /*bottom: 45vh;*/
+    left: 40vw;
+    bottom: 10vh;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    font-size: 1.0em;
+    text-decoration: none;
+    letter-spacing: .3em;
+    font-family: 'Poppins', sans-serif;
+
+
+  }
+
+  #home:hover {
+    background-color: white;
+    color: black;
+  }
+
+
+.scroll
+  {
+    position: static;
+    bottom: 0;
+    left: 0;
+  }
+
+
+
+  #home {
+    z-index: 0;
+  }
+
+
+
+}
+
+
+@media screen and (min-width:350px) and (max-width: 550px) {
+
+
+  #background {
+    display: none;
+
+  }
+
+
+
+  .horizon {
+    display: inline-block;
+    height: 400vh;
+    width: 100%;
+    background-size: cover;
+    background-image: url("images/fullpage-down2copy.png");
+    overflow: hidden;
+
+  }
+
+  #skill-title, #project-title {
+    display: none;
+  }
+
+
+  .wrapper, body, html {
+    /*height: 2750px;*/
+    /*height: 400vh;*/
+    width: 100%;
 
 
   }
@@ -739,15 +971,398 @@ a {
     color: black;
   }
 
+
+.scroll
+  {
+    position: static;
+    bottom: 0;
+    left: 0;
+  }
+
+  .horizon
+  {
+    z-index: 0;
+    width: 400px;
+    opacity: 0.9;
+  }
+
+  .middle
+  {
+    z-index: 0;
+    width: 400px;
+  }
+
+  #home {
+    z-index: 0;
+  }
+
+  .front
+  {
+    z-index: 0;
+    width: 400px;
+  }
+
 }
 
-@media(min-width: 1300px) {
-  #name {
-    /*padding-left: 210px;
-    margin-right: 260px;
-    padding-bottom: 360px;*/
+@media only screen and (width: 768px) {
+
+
+    #background {
+      display: none;
+    }
+
+
+
+    .horizon {
+      display: inline-block;
+      height: 400vh;
+      width: 100vw;
+      background-image: url("images/fullpage-ipad.png");
+      overflow: hidden;
+    }
+
+    #skill-title, #project-title {
+      display: none;
+    }
+
+
+    .wrapper, body, html {
+      /*height: 2750px;*/
+      /*height: 400vh;*/
+      width: 100vw;
+
+
+    }
+
+    /*.view {
+      height: 100%;
+      background-color: red;
+    }*/
+
+    .surroundContainer {
+      height: 100%;
+      width: 100%;
+      white-space: nowrap;
+      background-repeat: no-repeat;
+
+    }
+
+    .h1 {
+      display: none;
+
+    }
+
+
+
+
+    .h2 {
+      display: none;
+    }
+
+
+    #name {
+      position: absolute;
+      left: 16vw;
+      top: 3vh;
+      /*font-family: 'Covered By Your Grace', cursive;*/
+      display: inline-block;
+      height: 30vh;
+
+    }
+
+
+
+    #scroll-title {
+      display: none;
+
+
+    }
+
+
+
+
+    #skill-icon-1 {
+      display: inline-block;
+      position: absolute;
+      /*bottom: 3vh;*/
+      left: 18vw;
+      top: 115vh;
+      /*background-color: rgba(0, 0, 0, 0.4);*/
+
+
+    }
+
+  #skill-icon-1 img {
+    width: 75vw;
+
+  }
+
+
+
+    .drawing_things {
+      position: absolute;
+      left: 15vw;
+      top: 210vh;
+      opacity: .8;
+      display: inline-block;
+      width: 100%;
+      height: 35vh;
+      background-image: url(images/drawingthings.png);
+      background-repeat: no-repeat;
+    }
+
+
+    .drawing_things:hover {
+      /*width: 15vw;
+      height: 36vh;*/
+      background-image: url(images/drawingthings-hover.png);
+
+    }
+
+    .smarta {
+      position: absolute;
+      display: inline-block;
+      top: 210vh;
+      left: 60vw;
+      background-image: url(images/smarta2.png);
+      width: 100%;
+      height: 35vh;
+      opacity: .8;
+      background-repeat: no-repeat;
+    }
+
+    .smarta:hover {
+      background-image: url(images/smarta-hover.png);
+    }
+
+
+
+    .tictactoe {
+      position: absolute;
+      left: 15vw;
+      top: 240vh;
+      opacity: .8;
+      display: inline-block;
+      background-image: url(images/tic-tac-toe2.png);
+      width: 100%;
+      height: 35vh;
+      background-repeat: no-repeat;
+    }
+
+    .tictactoe:hover {
+      /*width: 15vw;
+      height: 36vh;*/
+      background-image: url(images/tic-tac-toe-hover2.png);
+    }
+
+
+    .blackjack {
+      position: absolute;
+      left: 60vw;
+      top: 240vh;
+      opacity: .8;
+      display: inline-block;
+      background-image: url(images/blackjack2.png);
+      width: 100%;
+      height: 35vh;
+      background-repeat: no-repeat;
+
+    }
+
+    .blackjack:hover {
+      background-image: url(images/blackjack2-hover.png);
+    }
+
+
+
+
+
+    #profile {
+      position: relative;
+      bottom: 50vh;
+      /*bottom: 38vh;*/
+      opacity: 0.7;
+      right: 3vw;
+      width: 30vw;
+
+    }
+
+    .about-me {
+      display: inline-block;
+      position: absolute;
+      left: 10vw;
+      top: 308vh;
+      /*bottom: 14vh;*/
+      line-height: 1.6em;
+      height: 20vh;
+      width: 20vw;
+      /*border: 2px solid white;*/
+      text-align: center;
+      padding-top: 50vh;
+      color: black;
+
+      font-size: 1.2em;
+    }
+
+    .about-me p {
+      display: inline-block;
+      position: absolute;
+      left: 35vw;
+      top: 1vh;
+
+      /*width: 10vw;*/
+      /*background-color: rgba(255, 0, 0, 0.2);*/
+      opacity: 0.7;
+      /*color: white;*/
+      /*padding-top: 50px;*/
+      font-family: 'Poppins', sans-serif;
+
+    }
+
+
+    .icons a{
+      position: relative;
+      bottom: 55vh;
+      padding: 5px;
+      margin-top: 5%;
+      left: 35vw;
+      /*filter: invert(100%);*/
+
+    }
+
+    .icons img {
+      width: 6vw;
+    }
+
+    .icons a:hover{
+      position: relative;
+      bottom: 5vh;
+      padding: 7px;
+      margin-top: 5%;
+      filter: invert(100%);
+
+    }
+
+    #resume {
+      text-decoration: none;
+      position: absolute;
+      left: 1vw;
+      top: 25vh;
+      font-size: 1.3em;
+      /*background-color: rgba(0, 0, 0, 0.4);*/
+      margin-top: 3vh;
+      padding: 1vw;
+      letter-spacing: .3em;
+      font-family: 'Poppins', sans-serif;
+      letter-spacing: .5em;
+    }
+
+
+
+
+    #resume:hover{
+      background-color: none;
+      color: white;
+    }
+
+
+
+    #home{
+      position: relative;
+      /*bottom: 45vh;*/
+      left: 40vw;
+      bottom: 10vh;
+      padding: 10px;
+      background-color: rgba(0, 0, 0, 0.4);
+      color: white;
+      font-size: 1.0em;
+      text-decoration: none;
+      letter-spacing: .3em;
+      font-family: 'Poppins', sans-serif;
+
+
+    }
+
+    #home:hover {
+      background-color: white;
+      color: black;
+    }
+
+
+  .scroll
+    {
+      position: static;
+      bottom: 0;
+      left: 0;
+    }
+
+    .horizon
+    {
+      z-index: 0;
+      width: 760px;
+      opacity: 0.9;
+    }
+
+    .middle
+    {
+      z-index: 0;
+      width: 760px;
+    }
+
+    #home {
+      z-index: 0;
+    }
+
+    .front
+    {
+      z-index: 0;
+      width: 400px;
+    }
+
+  }
+
+
+@media screen and (min-width: 1300px) and (max-width: 1400px) {
+
+#name {
+
+  position: relative;
+  top: 3vh;
+}
+
+
+.middle {
+  width: 5100px;
+}
+  #home{
     position: relative;
-    left: 15vw;
+    /*bottom: 45vh;*/
+    left: 197vw;
+    bottom: 37vh;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    font-size: 1.5em;
+    text-decoration: none;
+    letter-spacing: .3em;
+    font-family: 'Poppins', sans-serif;
+
+
+  }
+
+
+.h2 {
+  display: none;
+}
+
+}
+
+
+@media screen and (min-width: 1400px) and (max-width: 1500px) {
+
+  #name {
+    position: relative;
+    left: 16vw;
     bottom: 0vh;
     font-family: 'Covered By Your Grace', cursive;
     display: inline-block;
@@ -755,83 +1370,39 @@ a {
 
   }
 
-  /*#subname {
-    font-size: 0.4em;
-    position: relative;
-    left: 3vw;
-    bottom: 5vh;
-  }*/
-
-  #scroll-title {
-    display: inline-block;
-    /*top: 20vh;*/
-    position: relative;
-    text-align: center;
-    left: 40vw;
-    top: 40vh;
-    font-size: 1.8em;
-    /*font-weight: 100;*/
-    font-family: 'Montserrat', sans-serif;
-    -webkit-text-stroke: 0.6px black;
-    color: white;
-    text-shadow:
-      2.5px 2.5px 0 #000,
-    -1px -1px 0 #000,
-     2px -1px 0 #000,
-     -1px 1px 0 #000,
-      1px 1px 0 #000;
-
+  .middle {
+    width: 5000px;
   }
 
 
+  #scroll-title {
+    display: inline-block;
+    position: relative;
+    left: 40vw;
+    top: 40vh;
+    font-size: 2.0em;
 
+  }
 
   #skill-icon-1 {
     display: inline-block;
     position: relative;
-    /*bottom: 3vh;*/
-    left: 50vw;
-    /*background-color: rgba(0, 0, 0, 0.4);*/
-    width: 500px;
-    height: 90vh;
-
-
-    /*margin-left: 20px;*/
-    /*background-color: rgba(255, 0, 0, 0.2);*/
+    top: 5vh;
 
   }
 
-  /*#skill-icon-1 img, #skill-icon-2 img {
-    width: 500px;
-    background-color: rgba(0, 0, 0, 0.4);
-
-
-  }*/
-
-
-
-  /*#skill-icon-2 {
+  .projects {
     display: inline-block;
     position: relative;
-    bottom: 55vh;
-    opacity: .7;
+    top: 10vh;
 
-  }*/
-  /*.projects {
-    display: inline-block;
-    margin-left: 500px;
-    height: 98%;
-    border: 3px solid darkgray;
+  }
 
-  }*/
-  /*
-  a {
-    border: none;
-  }*/
+
 
   .drawing_things {
     position: relative;
-    left: 80vw;
+    left: 105vw;
     opacity: .8;
     display: inline-block;
     width: 14vw;
@@ -842,8 +1413,6 @@ a {
 
 
   .drawing_things:hover {
-    /*width: 15vw;
-    height: 36vh;*/
     background-image: url(images/drawingthings-hover.png);
 
   }
@@ -851,7 +1420,7 @@ a {
   .smarta {
     position: relative;
     display: inline-block;
-    left: 85vw;
+    left: 110vw;
     background-image: url(images/smarta2.png);
     width: 14vw;
     height: 35vh;
@@ -869,7 +1438,7 @@ a {
 
   .tictactoe {
     position: relative;
-    left: 90vw;
+    left: 115vw;
     /*margin-left: 65px;*/
     opacity: .8;
     display: inline-block;
@@ -888,7 +1457,7 @@ a {
 
   .blackjack {
     position: relative;
-    left: 95vw;
+    left: 120vw;
     opacity: .8;
     display: inline-block;
     background-image: url(images/blackjack2.png);
@@ -902,43 +1471,244 @@ a {
     background-image: url(images/blackjack2-hover.png);
   }
 
-
-
-
-
-  #profile {
+  #skill-title {
+    display: inline-block;
     position: relative;
-    bottom: 38vh;
-    opacity: 0.7;
-    right: 2vw;
+    left: 85vw;
+    top: 50vh;
+  }
 
+
+  #project-title {
+    display: inline-block;
+    position: relative;
+    left: 78vw;
+    top: 50vh;
   }
 
   .about-me {
     display: inline-block;
     position: relative;
-    left: 105vw;
-    top: 40vh;
-    /*bottom: 14vh;*/
+    left: 147vw;
+    top: 50vh;
     line-height: 1.7em;
-    height: 90vh;
-    width: 35vw;
+    height: 100vh;
+    width: 37vw;
     /*border: 2px solid white;*/
     text-align: center;
     padding-top: 50vh;
-    /*padding-bottom: 10px;*/
     color: black;
-    /*background-color: rgba(0, 0, 0, 0.4);*/
-
-    /*opacity: 0.7;*/
-    font-size: 1.0em;
+    background-color: rgba(255, 255, 255, 0.4);
+    font-size: 1.4em;
   }
 
   .about-me p {
     display: inline-block;
     position: absolute;
     right: 7vw;
-    top: 55vh;
+    top: 45vh;
+    width: 25vw;
+    opacity: 0.7;
+    margin-right: 15px;
+    font-family: 'Poppins', sans-serif;
+
+  }
+
+
+  .icons a{
+    position: relative;
+    bottom: 10vh;
+    padding: 7px;
+    margin-top: 10%;
+    right: 2vw;
+    text-decoration: none;
+
+  }
+
+  .icons a:hover{
+    position: relative;
+    /*bottom: 10vh;*/
+    padding: 7px;
+    margin-top: 5%;
+    filter: invert(100%);
+
+  }
+
+  #resume {
+    text-decoration: none;
+    font-size: 1.2em;
+    margin-top: 3vh;
+    padding: 1vw;
+    letter-spacing: .3em;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: .5em;
+    color: black;
+  }
+
+
+  #home{
+    position: relative;
+    left: 165vw;
+    bottom: 35vh;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    font-size: 1.5em;
+    text-decoration: none;
+    letter-spacing: .3em;
+    font-family: 'Poppins', sans-serif;
+
+
+  }
+
+
+.h2 {
+  display: none;
+}
+
+}
+
+
+
+@media screen and (min-width: 1600px) and (max-width: 1850px) {
+
+
+
+  .middle {
+    width: 6100px;
+  }
+  #name {
+    position: relative;
+    left: 16vw;
+    bottom: 0vh;
+    font-family: 'Covered By Your Grace', cursive;
+    display: inline-block;
+    height: 40vh;
+
+  }
+
+  #skill-icon-1 {
+    display: inline-block;
+    position: relative;
+    top: 5vh;
+
+  }
+
+  .projects {
+    display: inline-block;
+    position: relative;
+    top: 10vh;
+
+  }
+
+
+
+  .drawing_things {
+    position: relative;
+    left: 105vw;
+    opacity: .8;
+    display: inline-block;
+    width: 14vw;
+    height: 35vh;
+    background-image: url(images/drawingthings.png);
+    background-repeat: no-repeat;
+  }
+
+
+  .drawing_things:hover {
+    background-image: url(images/drawingthings-hover.png);
+
+  }
+
+  .smarta {
+    position: relative;
+    display: inline-block;
+    left: 110vw;
+    background-image: url(images/smarta2.png);
+    width: 14vw;
+    height: 35vh;
+    opacity: .8;
+    background-repeat: no-repeat;
+  }
+
+  .smarta:hover {
+    background-image: url(images/smarta-hover.png);
+    /*width: 15vw;
+    height: 36vh;*/
+  }
+
+
+
+  .tictactoe {
+    position: relative;
+    left: 115vw;
+    /*margin-left: 65px;*/
+    opacity: .8;
+    display: inline-block;
+    background-image: url(images/tic-tac-toe2.png);
+    width: 14vw;
+    height: 35vh;
+    background-repeat: no-repeat;
+  }
+
+  .tictactoe:hover {
+    /*width: 15vw;
+    height: 36vh;*/
+    background-image: url(images/tic-tac-toe-hover2.png);
+  }
+
+
+  .blackjack {
+    position: relative;
+    left: 120vw;
+    opacity: .8;
+    display: inline-block;
+    background-image: url(images/blackjack2.png);
+    width: 14vw;
+    height: 35vh;
+    background-repeat: no-repeat;
+
+  }
+
+  .blackjack:hover {
+    background-image: url(images/blackjack2-hover.png);
+  }
+
+  #skill-title {
+    display: inline-block;
+    position: relative;
+    left: 85vw;
+    top: 50vh;
+  }
+
+
+  #project-title {
+    display: inline-block;
+    position: relative;
+    left: 78vw;
+    top: 50vh;
+  }
+
+  .about-me {
+    display: inline-block;
+    position: relative;
+    left: 130vw;
+    top: 40vh;
+    line-height: 1.7em;
+    height: 100vh;
+    width: 35vw;
+    text-align: center;
+    padding-top: 50vh;
+    color: black;
+    background-color: rgba(255, 255, 255, 0);
+    font-size: 1.4em;
+  }
+
+  .about-me p {
+    display: inline-block;
+    position: absolute;
+    right: 7vw;
+    top: 45vh;
     width: 25vw;
     opacity: 0.7;
     font-family: 'Poppins', sans-serif;
@@ -948,18 +1718,293 @@ a {
 
   .icons a{
     position: relative;
-    bottom: 5vh;
+    bottom: 10vh;
+    padding: 7px;
+    margin-top: 10%;
+    right: 2vw;
+    text-decoration: none;
+
+  }
+
+
+  .icons a:hover{
+    position: relative;
+    /*bottom: 10vh;*/
     padding: 7px;
     margin-top: 5%;
+    filter: invert(100%);
+
+  }
+
+  .icons img {
+    width: 2vw;
+  }
+
+  #resume {
+    text-decoration: none;
+    font-size: 1.0em;
+    margin-top: 3vh;
+    padding: 1vw;
+    letter-spacing: .3em;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: .5em;
+    color: black;
+  }
+
+
+
+
+  #home{
+    position: relative;
+    left: 180vw;
+    bottom: 30vh;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    font-size: 1.5em;
+    text-decoration: none;
+    letter-spacing: .3em;
+    font-family: 'Poppins', sans-serif;
+
+  }
+
+
+.h2 {
+  display: none;
+}
+
+}
+
+
+@media screen and (min-width: 1850px) and (max-width: 2150px) {
+
+
+
+  .middle {
+    width: 7500px;
+  }
+
+  #name {
+    position: relative;
+    left: 16vw;
+    bottom: 5vh;
+    font-family: 'Covered By Your Grace', cursive;
+    display: inline-block;
+    height: 40vh;
+
+  }
+
+  #scroll-title {
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    left: 40vw;
+    top: 40vh;
+    font-size: 3.0em;
+    /*font-weight: 100;*/
+    font-family: 'Montserrat', sans-serif;
+    -webkit-text-stroke: 0.6px black;
+    color: white;
+    text-shadow:
+      2.5px 2.5px 0 #000,
+    -1px -1px 0 #000,
+     2px -1px 0 #000,
+     -1px 1px 0 #000,
+      1px 1px 0 #000;
+
+  }
+
+
+  #skill-icon-1 {
+    display: inline-block;
+    position: relative;
+    left: 80vw;
+    height: 90vh;
+
+
+
+  }
+
+
+  .projects {
+    display: inline-block;
+    position: relative;
+    top: 0vh;
+
+  }
+
+
+  .drawing_things {
+    position: relative;
+    left: 120vw;
+    bottom: 10vh;
+    opacity: .8;
+    display: inline-block;
+    width: 14vw;
+    height: 35vh;
+    background-image: url(images/drawingthings.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+
+  .drawing_things:hover {
+    background-image: url(images/drawingthings-hover.png);
+
+  }
+
+  .smarta {
+    position: relative;
+    display: inline-block;
+    left: 125vw;
+    bottom: 10vh;
+
+    background-image: url(images/smarta2.png);
+    width: 14vw;
+    height: 35vh;
+    opacity: .8;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+  }
+
+  .smarta:hover {
+    background-image: url(images/smarta-hover.png);
+    background-size: cover;
+
+    /*width: 15vw;
+    height: 36vh;*/
+  }
+
+
+
+  .tictactoe {
+    position: relative;
+    left: 130vw;
+    bottom: 10vh;
+
+    /*margin-left: 65px;*/
+    opacity: .8;
+    display: inline-block;
+    background-image: url(images/tic-tac-toe2.png);
+    width: 14vw;
+    height: 35vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+  }
+
+  .tictactoe:hover {
+    /*width: 15vw;
+    height: 36vh;*/
+    background-image: url(images/tic-tac-toe-hover2.png);
+    background-size: cover;
+
+  }
+
+
+  .blackjack {
+    position: relative;
+    left: 135vw;
+    bottom: 10vh;
+
+    opacity: .8;
+    display: inline-block;
+    background-image: url(images/blackjack2.png);
+    width: 14vw;
+    height: 35vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+  }
+
+  .blackjack:hover {
+    background-image: url(images/blackjack2-hover.png);
+    background-size: cover;
+
+  }
+
+  #skill-title {
+    display: inline-block;
+    position: relative;
+    left: 85vw;
+    top: 40vh;
+    width: 100px;
+  }
+
+
+  #skill-title img{
+    width: 10vw;
+  }
+
+
+  #project-title {
+    display: inline-block;
+    position: relative;
+    left: 95vw;
+    top: 40vh;
+  }
+
+  #project-title img{
+    width: 10vw;
+  }
+
+  #profile {
+    position: relative;
+    bottom: 38vh;
+    opacity: 0.7;
     right: 2vw;
+  }
 
-    /*filter: invert(100%);*/
+  #profile {
+    width: 15vw;
+  }
 
+  .about-me {
+    display: inline-block;
+    position: relative;
+    left: 165vw;
+    top: 40vh;
+    line-height: 1.7em;
+    height: 100vh;
+    width: 35vw;
+    text-align: center;
+    padding-top: 50vh;
+    color: black;
+    background-color: rgba(255, 255, 255, 0.4);
+    font-size: 1.4em;
+  }
+
+  .about-me p {
+    display: inline-block;
+    position: absolute;
+    right: 7vw;
+    top: 45vh;
+    width: 25vw;
+    opacity: 0.7;
+    font-family: 'Poppins', sans-serif;
+
+  }
+
+
+  .icons a{
+    position: relative;
+    bottom: 6vh;
+    padding: 7px;
+    margin-top: 10%;
+    right: 2vw;
+    text-decoration: none;
+
+  }
+
+  .icons img {
+    width: 2vw;
   }
 
   .icons a:hover{
     position: relative;
-    bottom: 5vh;
+    /*bottom: 10vh;*/
     padding: 7px;
     margin-top: 5%;
     filter: invert(100%);
@@ -968,48 +2013,33 @@ a {
 
   #resume {
     text-decoration: none;
-    position: absolute;
-    left: 9.5vw;
-    top: 87vh;
-    font-size: 1.2em;
-    /*background-color: rgba(0, 0, 0, 0.4);*/
+    font-size: 1.1em;
     margin-top: 3vh;
     padding: 1vw;
     letter-spacing: .3em;
     font-family: 'Poppins', sans-serif;
     letter-spacing: .5em;
-  }
-
-
-
-
-  #resume:hover{
-    background-color: none;
-    color: white;
-  }
-
-
-
-  #home{
-    position: relative;
-    /*bottom: 45vh;*/
-    left: 225vw;
-    padding: 10px;
-    background-color: rgba(0, 0, 0, 0.4);
-    color: white;
-    font-size: 1.0em;
-    text-decoration: none;
-    letter-spacing: .3em;
-    font-family: 'Poppins', sans-serif;
-
-
-  }
-
-  #home:hover {
-    background-color: white;
     color: black;
   }
 
 
+  #home{
+    position: relative;
+    left: 215vw;
+    top: 0vh;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    font-size: 1.6em;
+    text-decoration: none;
+    letter-spacing: .3em;
+    font-family: 'Poppins', sans-serif;
+
+  }
+
+
+.h2 {
+  display: none;
+}
 
 }

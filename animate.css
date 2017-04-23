@@ -239,10 +239,10 @@
 .rubberBand {
   -webkit-animation-name: rubberBand;
   animation-name: rubberBand;
-  -webkit-animation-duration: 5s;
-  animation-duration: 3s;
+  -webkit-animation-duration: 4s;
+  animation-duration: 4s;
   -webkit-animation-delay: 3s;
-  animation-delay: 2s;
+  animation-delay: 3s;
   /*-webkit-animation-iteration-count: infinite;*/
 
 }
