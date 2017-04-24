@@ -380,7 +380,7 @@ html, body {
 
 /*iphone5 mobile phone*/
 
-@media(max-width: 350px) {
+@media(max-width: 349px) {
 
   #background {
     display: none;
