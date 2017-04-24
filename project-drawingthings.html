@@ -3,19 +3,128 @@
   <head>
     <meta charset="utf-8">
     <title>About Drawing Things </title>
-    <style>
+    <link href="https://fonts.googleapis.com/css?family=Covered+By+Your+Grace|Poppins" rel="stylesheet">
 
+    <style>
+body {
+  background-image: url("images/project-background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#home {
+  position: absolute;
+  top: 2vh;
+  padding: 5px;
+  background-color: rgba(0, 0, 0, 1);
+  color: white;
+  font-size: 1.3em;
+  text-decoration: none;
+  letter-spacing: .3em;
+  font-family: 'Poppins', sans-serif;
+  width: 10vw;
+  text-align: center;
+}
+
+#home:hover {
+  font-size: 1.4em;
+  filter: invert(100%);
+
+}
+
+.drawing_things {
+  background-image: url(images/drawingthings.png);
+  position: absolute;
+  top: 15vh;
+  left: 5vw;
+  width: 20vw;
+  height: 50vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.drawing_things:hover {
+  /*background-image: url(images/drawingthings-hover.png);*/
+  filter: invert(70%);
+
+
+}
+
+.project-background {
+  position: absolute;
+  right: 10vw;
+  top: 10vh;
+  display: inline-block;
+  width: 80vw;
+  height: 80vh;
+  background-color: gray;
+  opacity: 0.7;
+  text-align: center;
+
+}
+h2 {
+  font-family: 'Poppins', sans-serif;
+  color: white;
+}
+
+.information p {
+
+  padding-left: 30vw;
+  padding-right: 4vw;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.3em;
+
+
+}
+
+.description {
+  padding-top: 10vh;
+}
+
+.technologies {
+
+}
+
+.icons:hover {
+  filter: invert(100%);
+
+
+}
     </style>
   </head>
   <body>
 
-    <div class="project-image">
-
-      <a href="http://drawing-things.andreeauta.com" class="drawing_things">
-
+    <div>
+      <a id= "home" href="index.html"> Home </a>
     </div>
 
-  <div class="project-description">
+
+
+
+  <div class="project-background">
+
+
+      <a href="http://drawing-things.andreeauta.com" class="drawing_things"> </a>
+
+      <h2> Drawing Things </h2>
+
+    <div class="information">
+
+    <p class="description">
+       Using Socket.io and Javasript I built an application that allows you to collaborate with friends on beautiful pictures.
+
+    </p>
+
+  <p class="technologies">
+Technologies: HTML, CSS, JS, Socket.IO
+</p>
+
+<p class= "icons">
+<a href="https://github.com/dreeauta/DrawingThings-Project"><img src="images/github.png" alt=""> </a>
+
+</p>
+</div>
 
   </div>
 

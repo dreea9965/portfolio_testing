@@ -45,6 +45,7 @@ h1
   z-index: 1;
   width: 7252px;
   height: 100vh;
+  /*background-image: url(images/fullpage-notitle.jpg);*/
 }
 
 .middle
@@ -76,6 +77,7 @@ html, body {
 
 #background {
   height: 100vh;
+  width: 100%;
 }
 
 #background-mobile {
@@ -171,18 +173,19 @@ html, body {
   /*bottom: 3vh;*/
   left: 70vw;
   height: 90vh;
-
+  opacity: 0.8;
+  /*background-color: rgba(255, 255, 255, 0.4);*/
 
 }
 
-#skill-icon-1 img {
+/*#skill-icon-1 img {
   width: 37vw;
-}
+}*/
 
 #skill-title {
   display: inline-block;
   position: relative;
-  left: 85vw;
+  left: 90vw;
   top: 40vh;
 }
 
@@ -260,9 +263,9 @@ html, body {
 
 }
 
-.blackjack:hover {
+/*.blackjack:hover {
   background-image: url(images/blackjack2-hover.png);
-}
+}*/
 
 
 #project-title {
@@ -285,7 +288,7 @@ html, body {
 .about-me {
   display: inline-block;
   position: relative;
-  left: 145vw;
+  left: 146vw;
   top: 50vh;
   /*bottom: 14vh;*/
   line-height: 1.7em;
@@ -336,7 +339,7 @@ html, body {
   text-decoration: none;
   font-size: 1.2em;
   margin-top: 3vh;
-  padding: 1vw;
+  padding-left: 1vw;
   letter-spacing: .3em;
   font-family: 'Poppins', sans-serif;
   letter-spacing: .5em;
@@ -357,7 +360,7 @@ html, body {
 
 #home{
   position: relative;
-  left: 208vw;
+  left: 202vw;
   padding: 10px;
   background-color: rgba(0, 0, 0, 0.4);
   color: white;
@@ -375,6 +378,8 @@ html, body {
 }
 
 
+/*iphone5 mobile phone*/
+
 @media(max-width: 350px) {
 
   #background {
@@ -387,9 +392,9 @@ html, body {
   .horizon {
     display: inline-block;
     height: 400vh;
-    width: 100%;
+    width: 105%;
     background-size: cover;
-    background-image: url("images/fullpage-down2copy.png");
+    background-image: url("images/fullpagedown-mobile.jpg");
     overflow: hidden;
 
   }
@@ -407,10 +412,6 @@ html, body {
 
   }
 
-  /*.view {
-    height: 100%;
-    background-color: red;
-  }*/
 
   .surroundContainer {
     height: 100%;
@@ -461,7 +462,7 @@ html, body {
     position: absolute;
     /*bottom: 3vh;*/
     left: 18vw;
-    top: 115vh;
+    top: 105vh;
     /*background-color: rgba(0, 0, 0, 0.4);*/
 
 
@@ -476,7 +477,7 @@ html, body {
   .drawing_things {
     position: absolute;
     left: 15vw;
-    top: 210vh;
+    top: 200vh;
     opacity: .8;
     display: inline-block;
     width: 100%;
@@ -486,17 +487,15 @@ html, body {
   }
 
 
-  .drawing_things:hover {
-    /*width: 15vw;
-    height: 36vh;*/
+  /*.drawing_things:hover {
     background-image: url(images/drawingthings-hover.png);
 
-  }
+  }*/
 
   .smarta {
     position: absolute;
     display: inline-block;
-    top: 210vh;
+    top: 200vh;
     left: 60vw;
     background-image: url(images/smarta2-mobile.png);
     width: 100%;
@@ -505,11 +504,9 @@ html, body {
     background-repeat: no-repeat;
   }
 
-  .smarta:hover {
+  /*.smarta:hover {
     background-image: url(images/smarta-hover.png);
-    /*width: 15vw;
-    height: 36vh;*/
-  }
+  }*/
 
 
 
@@ -517,7 +514,7 @@ html, body {
     position: absolute;
     left: 15vw;
     /*margin-left: 65px;*/
-    top: 240vh;
+    top: 230vh;
     opacity: .8;
     display: inline-block;
     background-image: url(images/tic-tac-toe2-mobile.png);
@@ -526,17 +523,15 @@ html, body {
     background-repeat: no-repeat;
   }
 
-  .tictactoe:hover {
-    /*width: 15vw;
-    height: 36vh;*/
+  /*.tictactoe:hover {
     background-image: url(images/tic-tac-toe-hover2.png);
-  }
+  }*/
 
 
   .blackjack {
     position: absolute;
     left: 60vw;
-    top: 240vh;
+    top: 230vh;
     opacity: .8;
     display: inline-block;
     background-image: url(images/blackjack2-mobile.png);
@@ -546,9 +541,9 @@ html, body {
 
   }
 
-  .blackjack:hover {
+  /*.blackjack:hover {
     background-image: url(images/blackjack2-hover.png);
-  }
+  }*/
 
 
 
@@ -568,7 +563,7 @@ html, body {
     display: inline-block;
     position: absolute;
     left: 10vw;
-    top: 315vh;
+    top: 305vh;
     /*bottom: 14vh;*/
     line-height: 1.2em;
     height: 20vh;
@@ -619,11 +614,10 @@ html, body {
   #resume {
     text-decoration: none;
     position: absolute;
-    left: 1vw;
+    left: 0vw;
     top: 17vh;
     font-size: .8em;
     margin-top: 3vh;
-    /*padding: 1vw;*/
     letter-spacing: .3em;
     font-family: 'Poppins', sans-serif;
     letter-spacing: .5em;
@@ -661,24 +655,42 @@ html, body {
   }
 
 
-.scroll
-  {
-    position: static;
-    bottom: 0;
-    left: 0;
-  }
+  .scroll
+    {
+      position: static;
+      bottom: 0;
+      left: 0;
+    }
 
+    .horizon
+    {
+      z-index: 0;
+      width: 400px;
+      opacity: 0.9;
+    }
 
+    .middle
+    {
+      z-index: 0;
+      width: 400px;
+    }
 
-  #home {
-    z-index: 0;
-  }
+    #home {
+      z-index: 0;
+    }
 
+    .front
+    {
+      z-index: 0;
+      width: 400px;
+    }
 
 
 }
 
 
+
+/*//mobile phone media query*/
 @media screen and (min-width:350px) and (max-width: 550px) {
 
 
@@ -694,7 +706,7 @@ html, body {
     height: 400vh;
     width: 100%;
     background-size: cover;
-    background-image: url("images/fullpage-down2copy.png");
+    background-image: url("images/fullpagedown-mobile.jpg");
     overflow: hidden;
 
   }
@@ -1004,6 +1016,7 @@ html, body {
 
 }
 
+/*ipad media query*/
 @media only screen and (width: 768px) {
 
 
@@ -1017,7 +1030,7 @@ html, body {
       display: inline-block;
       height: 400vh;
       width: 100vw;
-      background-image: url("images/fullpage-ipad.png");
+      background-image: url("images/fullpagedown-ipad.jpg");
       overflow: hidden;
     }
 
@@ -1030,6 +1043,7 @@ html, body {
       /*height: 2750px;*/
       /*height: 400vh;*/
       width: 100vw;
+      background-color: #90808B;
 
 
     }
@@ -1086,7 +1100,7 @@ html, body {
       position: absolute;
       /*bottom: 3vh;*/
       left: 18vw;
-      top: 115vh;
+      top: 105vh;
       /*background-color: rgba(0, 0, 0, 0.4);*/
 
 
@@ -1102,7 +1116,7 @@ html, body {
     .drawing_things {
       position: absolute;
       left: 15vw;
-      top: 210vh;
+      top: 200vh;
       opacity: .8;
       display: inline-block;
       width: 100%;
@@ -1122,7 +1136,7 @@ html, body {
     .smarta {
       position: absolute;
       display: inline-block;
-      top: 210vh;
+      top: 200vh;
       left: 60vw;
       background-image: url(images/smarta2.png);
       width: 100%;
@@ -1140,7 +1154,7 @@ html, body {
     .tictactoe {
       position: absolute;
       left: 15vw;
-      top: 240vh;
+      top: 230vh;
       opacity: .8;
       display: inline-block;
       background-image: url(images/tic-tac-toe2.png);
@@ -1159,7 +1173,7 @@ html, body {
     .blackjack {
       position: absolute;
       left: 60vw;
-      top: 240vh;
+      top: 230vh;
       opacity: .8;
       display: inline-block;
       background-image: url(images/blackjack2.png);
