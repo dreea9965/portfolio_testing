@@ -173,7 +173,6 @@ html, body {
   /*bottom: 3vh;*/
   left: 70vw;
   height: 90vh;
-  opacity: 0.8;
   /*background-color: rgba(255, 255, 255, 0.4);*/
 
 }
@@ -278,9 +277,10 @@ html, body {
 
 #profile {
   position: relative;
-  bottom: 38vh;
+  bottom: 42vh;
   opacity: 0.7;
   right: 2vw;
+  width: 17vw;
 }
 
 
@@ -299,18 +299,20 @@ html, body {
   padding-top: 50vh;
   /*padding-bottom: 10px;*/
   color: black;
-  /*background-color: rgba(255, 255, 255, 0.4);*/
+  background-color: rgba(255, 255, 255, 0.4);
   /*opacity: 0.7;*/
   font-size: 1.0em;
 }
 
-.about-me p {
+.about-me-text {
   display: inline-block;
   position: absolute;
-  right: 7vw;
-  top: 55vh;
+  right: 10vw;
+  top: 47vh;
   width: 25vw;
   opacity: 0.7;
+  padding-left: 5vw;
+  padding-right: 5vw;
   font-family: 'Poppins', sans-serif;
 
 }
@@ -318,7 +320,7 @@ html, body {
 
 .icons a{
   position: relative;
-  bottom: 10vh;
+  bottom: 7vh;
   padding: 7px;
   margin-top: 5%;
   right: 2vw;
@@ -380,7 +382,7 @@ html, body {
 
 /*iphone5 mobile phone*/
 
-@media(max-width: 349px) {
+@media screen and (max-width: 330px) {
 
   #background {
     display: none;
@@ -392,7 +394,7 @@ html, body {
   .horizon {
     display: inline-block;
     height: 400vh;
-    width: 105%;
+    /*width: 105%;*/
     background-size: cover;
     background-image: url("images/fullpagedown-mobile.jpg");
     overflow: hidden;
@@ -508,6 +510,9 @@ html, body {
     background-image: url(images/smarta-hover.png);
   }*/
 
+.smart:hover {
+  background-image: none;
+}
 
 
   .tictactoe {
@@ -523,9 +528,9 @@ html, body {
     background-repeat: no-repeat;
   }
 
-  /*.tictactoe:hover {
-    background-image: url(images/tic-tac-toe-hover2.png);
-  }*/
+  .tictactoe:hover {
+    background-image:none;
+  }
 
 
   .blackjack {
@@ -541,9 +546,9 @@ html, body {
 
   }
 
-  /*.blackjack:hover {
-    background-image: url(images/blackjack2-hover.png);
-  }*/
+  .blackjack:hover {
+    background-image: none;
+  }
 
 
 
@@ -562,12 +567,12 @@ html, body {
   .about-me {
     display: inline-block;
     position: absolute;
-    left: 10vw;
+    left: 6vw;
     top: 305vh;
     /*bottom: 14vh;*/
     line-height: 1.2em;
     height: 20vh;
-    width: 20vw;
+    width: 25vw;
     /*border: 2px solid white;*/
     text-align: left;
     padding-top: 50vh;
@@ -579,22 +584,23 @@ html, body {
   .about-me p {
     display: inline-block;
     position: absolute;
-    left: 33vw;
+    left: 32vw;
     top: 1vh;
+    width: 55vw;
     opacity: 0.7;
     font-size: 0.4em;
     font-family: 'Poppins', sans-serif;
+    /*overflow: auto;*/
 
   }
 
 
   .icons a{
     position: relative;
-    bottom: 48vh;
+    bottom: 45vh;
     padding: 5px;
     margin-top: 5%;
-    left: 35vw;
-    /*filter: invert(100%);*/
+    left: 37vw;
 
   }
 
@@ -602,14 +608,11 @@ html, body {
     width: 6vw;
   }
 
-  .icons a:hover{
-    position: relative;
-    bottom: 5vh;
+  /*.icons a:hover{
     padding: 7px;
-    margin-top: 5%;
     filter: invert(100%);
 
-  }
+  }*/
 
   #resume {
     text-decoration: none;
@@ -625,12 +628,12 @@ html, body {
 
 
 
-
+/*
   #resume:hover{
     background-color: none;
     color: white;
   }
-
+*/
 
 
   #home{
@@ -649,11 +652,11 @@ html, body {
 
   }
 
-  #home:hover {
+  /*#home:hover {
     background-color: white;
     color: black;
   }
-
+*/
 
   .scroll
     {
@@ -691,7 +694,7 @@ html, body {
 
 
 /*//mobile phone media query*/
-@media screen and (min-width:350px) and (max-width: 550px) {
+@media screen and (min-width:350px) and (max-width: 700px) {
 
 
   #background {
@@ -720,6 +723,8 @@ html, body {
     /*height: 2750px;*/
     /*height: 400vh;*/
     width: 100%;
+    background-color: #90808B;
+
 
 
   }
@@ -803,12 +808,10 @@ html, body {
   }
 
 
-  .drawing_things:hover {
-    /*width: 15vw;
-    height: 36vh;*/
+  /*.drawing_things:hover {
     background-image: url(images/drawingthings-hover.png);
 
-  }
+  }*/
 
   .smarta {
     position: absolute;
@@ -822,18 +825,15 @@ html, body {
     background-repeat: no-repeat;
   }
 
-  .smarta:hover {
+  /*.smarta:hover {
     background-image: url(images/smarta-hover.png);
-    /*width: 15vw;
-    height: 36vh;*/
-  }
+  }*/
 
 
 
   .tictactoe {
     position: absolute;
     left: 15vw;
-    /*margin-left: 65px;*/
     top: 240vh;
     opacity: .8;
     display: inline-block;
@@ -843,11 +843,9 @@ html, body {
     background-repeat: no-repeat;
   }
 
-  .tictactoe:hover {
-    /*width: 15vw;
-    height: 36vh;*/
+  /*.tictactoe:hover {
     background-image: url(images/tic-tac-toe-hover2.png);
-  }
+  }*/
 
 
   .blackjack {
@@ -863,23 +861,21 @@ html, body {
 
   }
 
-  .blackjack:hover {
+  /*.blackjack:hover {
     background-image: url(images/blackjack2-hover.png);
-  }
-
-
+  }*/
 
 
 
   #profile {
     position: relative;
     bottom: 50vh;
-    /*bottom: 38vh;*/
     opacity: 0.7;
     right: 3vw;
     width: 30vw;
 
   }
+
 
   .about-me {
     display: inline-block;
@@ -917,10 +913,10 @@ html, body {
 
   .icons a{
     position: relative;
-    bottom: 50vh;
+    bottom: 47vh;
     padding: 5px;
     margin-top: 5%;
-    left: 35vw;
+    left: 39vw;
     /*filter: invert(100%);*/
 
   }
@@ -929,14 +925,14 @@ html, body {
     width: 6vw;
   }
 
-  .icons a:hover{
+  /*.icons a:hover{
     position: relative;
     bottom: 5vh;
     padding: 7px;
     margin-top: 5%;
     filter: invert(100%);
 
-  }
+  }*/
 
   #resume {
     text-decoration: none;
@@ -955,10 +951,10 @@ html, body {
 
 
 
-  #resume:hover{
+  /*#resume:hover{
     background-color: none;
     color: white;
-  }
+  }*/
 
 
 
@@ -978,10 +974,10 @@ html, body {
 
   }
 
-  #home:hover {
+  /*#home:hover {
     background-color: white;
     color: black;
-  }
+  }*/
 
 
 .scroll
@@ -2056,4 +2052,116 @@ html, body {
   display: none;
 }
 
+}
+
+@media screen and (max-width: 1024px) and (min-width:800px) {
+
+
+  #profile {
+    position: relative;
+    bottom: 47vh;
+    opacity: 0.7;
+    right: 2vw;
+    width: 17vw;
+  }
+
+
+
+  .about-me {
+    display: inline-block;
+    position: relative;
+    left: 146vw;
+    top: 40vh;
+    /*bottom: 14vh;*/
+    line-height: 1.7em;
+    height: 100vh;
+    width: 35vw;
+    /*border: 2px solid white;*/
+    text-align: center;
+    padding-top: 50vh;
+    /*padding-bottom: 10px;*/
+    color: black;
+    background-color: rgba(255, 255, 255, 0.4);
+    /*opacity: 0.7;*/
+    font-size: 0.9em;
+  }
+
+  .about-me-text {
+    display: inline-block;
+    position: absolute;
+    right: 10vw;
+    top: 40vh;
+    width: 25vw;
+    opacity: 0.7;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    font-family: 'Poppins', sans-serif;
+
+  }
+
+
+  .icons a{
+    position: relative;
+    bottom: 10vh;
+    padding: 7px;
+    margin-top: 5%;
+    right: 2vw;
+    text-decoration: none;
+
+  }
+
+  .icons a:hover{
+    position: relative;
+    /*bottom: 10vh;*/
+    padding: 7px;
+    margin-top: 5%;
+    filter: invert(100%);
+
+  }
+
+  #resume {
+    text-decoration: none;
+    font-size: 1.2em;
+    margin-top: 3vh;
+    padding-left: 1vw;
+    letter-spacing: .3em;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: .5em;
+    color: black;
+    background-color: rgba(255, 255, 255, 0.4);
+  }
+
+
+
+  #resume:hover{
+    background-color: none;
+    /*filter: invert(100%);*/
+    color: black;
+    font-size: 1.3em;
+  }
+
+
+
+  #home{
+    position: relative;
+    left: 185vw;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    font-size: 1.0em;
+    text-decoration: none;
+    letter-spacing: .3em;
+    font-family: 'Poppins', sans-serif;
+
+
+  }
+
+  #home:hover {
+    background-color: white;
+    color: black;
+  }
+
+  .middle {
+    width: 4000px;
+  }
 }
