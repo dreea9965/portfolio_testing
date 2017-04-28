@@ -708,7 +708,7 @@ html, body {
   .horizon {
     display: inline-block;
     height: 400vh;
-    width: 100%;
+    /*width: 100%;*/
 
   }
 
