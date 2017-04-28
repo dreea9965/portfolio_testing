@@ -399,7 +399,7 @@ html, body {
     /*width: 105%;*/
     background-size: cover;
     background-image: url("images/fullpagedown-mobile.jpg");
-    overflow-x: hidden;
+    overflow: hidden;
 
   }
 
@@ -411,7 +411,7 @@ html, body {
   .wrapper, body, html {
     /*height: 2750px;*/
     /*height: 400vh;*/
-    width: 100vw;
+    width: 100%;
 
 
   }
