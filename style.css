@@ -399,7 +399,7 @@ html, body {
     /*width: 105%;*/
     background-size: cover;
     background-image: url("images/fullpagedown-mobile.jpg");
-    overflow: hidden;
+    overflow-x: hidden;
 
   }
 
@@ -411,7 +411,7 @@ html, body {
   .wrapper, body, html {
     /*height: 2750px;*/
     /*height: 400vh;*/
-    width: 100%;
+    width: 100vw;
 
 
   }
@@ -575,6 +575,8 @@ html, body {
     line-height: 1.2em;
     height: 20vh;
     width: 25vw;
+    background-color: rgba(0, 0, 0, 0);
+
     /*border: 2px solid white;*/
     text-align: left;
     padding-top: 50vh;
@@ -670,21 +672,25 @@ html, body {
     .horizon
     {
       z-index: 0;
-      width: 100vw;
+      width: 400px;
       opacity: 0.9;
     }
 
     .middle
     {
       z-index: 0;
-      width: 100vw;
+      width: 400px;
     }
 
     #home {
       z-index: 0;
     }
 
-
+    .front
+    {
+      z-index: 0;
+      width: 400px;
+    }
 
 
 }
@@ -704,11 +710,9 @@ html, body {
 
   .horizon {
     display: inline-block;
-    height: 410vh;
+    height: 400vh;
     width: 100%;
-    background-size: cover;
-    background-image: url("images/fullpagedown-mobile.jpg");
-    background-position: center center;
+
   }
 
   #skill-title, #project-title {
@@ -721,6 +725,8 @@ html, body {
     /*height: 400vh;*/
     width: 100%;
     background-color: #90808B;
+    background-image: url("images/fullpagedown-mobilebigger.jpg");
+    background-repeat: no-repeat;
 
 
   }
@@ -886,7 +892,7 @@ html, body {
     text-align: center;
     padding-top: 50vh;
     color: black;
-
+    background-color: rgba(0, 0, 0, 0);
     font-size: 1.0em;
   }
 
@@ -897,7 +903,7 @@ html, body {
     top: 1vh;
 
     /*width: 10vw;*/
-    /*background-color: rgba(255, 0, 0, 0.2);*/
+    background-color: rgba(0, 0, 0, 0);
     opacity: 0.7;
     font-size: 0.5em;
     /*color: white;*/
@@ -936,7 +942,7 @@ html, body {
     left: 1vw;
     top: 15vh;
     font-size: .8em;
-    /*background-color: rgba(0, 0, 0, 0.4);*/
+    background-color: rgba(0, 0, 0, 0);
     margin-top: 3vh;
     padding: 1vw;
     letter-spacing: .3em;
@@ -976,25 +982,35 @@ html, body {
   }*/
 
 
+.scroll
+  {
+    position: static;
+    bottom: 0;
+    left: 0;
+  }
 
   .horizon
   {
     z-index: 0;
-    width: 100vw;
+    width: 400px;
     opacity: 0.9;
   }
 
   .middle
   {
     z-index: 0;
-    width: 100vw;
+    width: 400px;
   }
 
   #home {
     z-index: 0;
   }
 
-
+  .front
+  {
+    z-index: 0;
+    width: 400px;
+  }
 
 }
 
