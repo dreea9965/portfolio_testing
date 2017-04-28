@@ -43,7 +43,8 @@ h1
 .horizon
 {
   z-index: 1;
-  width: 7252px;
+  /*width: 7252px;*/
+  width: 500vw;
   height: 100vh;
   /*background-image: url(images/fullpage-notitle.jpg);*/
 }
@@ -51,7 +52,8 @@ h1
 .middle
 {
   z-index: 500;
-  width: 5000px;
+  /*width: 5000px;*/
+  width: 390vw;
 }
 
 #home {
@@ -668,25 +670,21 @@ html, body {
     .horizon
     {
       z-index: 0;
-      width: 400px;
+      width: 100vw;
       opacity: 0.9;
     }
 
     .middle
     {
       z-index: 0;
-      width: 400px;
+      width: 100vw;
     }
 
     #home {
       z-index: 0;
     }
 
-    .front
-    {
-      z-index: 0;
-      width: 400px;
-    }
+
 
 
 }
@@ -706,12 +704,11 @@ html, body {
 
   .horizon {
     display: inline-block;
-    height: 400vh;
+    height: 410vh;
     width: 100%;
     background-size: cover;
     background-image: url("images/fullpagedown-mobile.jpg");
-    overflow: hidden;
-
+    background-position: center center;
   }
 
   #skill-title, #project-title {
@@ -724,7 +721,6 @@ html, body {
     /*height: 400vh;*/
     width: 100%;
     background-color: #90808B;
-
 
 
   }
@@ -980,35 +976,25 @@ html, body {
   }*/
 
 
-.scroll
-  {
-    position: static;
-    bottom: 0;
-    left: 0;
-  }
 
   .horizon
   {
     z-index: 0;
-    width: 400px;
+    width: 100vw;
     opacity: 0.9;
   }
 
   .middle
   {
     z-index: 0;
-    width: 400px;
+    width: 100vw;
   }
 
   #home {
     z-index: 0;
   }
 
-  .front
-  {
-    z-index: 0;
-    width: 400px;
-  }
+
 
 }
 
@@ -1341,9 +1327,7 @@ html, body {
 }
 
 
-.middle {
-  width: 5100px;
-}
+
   #home{
     position: relative;
     /*bottom: 45vh;*/
@@ -1380,9 +1364,6 @@ html, body {
 
   }
 
-  .middle {
-    width: 5000px;
-  }
 
 
   #scroll-title {
@@ -1585,8 +1566,9 @@ html, body {
 
 
   .middle {
-    width: 6100px;
+    width: 380vw;
   }
+
   #name {
     position: relative;
     left: 16vw;
@@ -1699,67 +1681,7 @@ html, body {
     top: 50vh;
   }
 
-  .about-me {
-    display: inline-block;
-    position: relative;
-    left: 130vw;
-    top: 40vh;
-    line-height: 1.7em;
-    height: 100vh;
-    width: 35vw;
-    text-align: center;
-    padding-top: 50vh;
-    color: black;
-    background-color: rgba(255, 255, 255, 0);
-    font-size: 1.4em;
-  }
 
-  .about-me p {
-    display: inline-block;
-    position: absolute;
-    right: 7vw;
-    top: 45vh;
-    width: 25vw;
-    opacity: 0.7;
-    font-family: 'Poppins', sans-serif;
-
-  }
-
-
-  .icons a{
-    position: relative;
-    bottom: 10vh;
-    padding: 7px;
-    margin-top: 10%;
-    right: 2vw;
-    text-decoration: none;
-
-  }
-
-
-  .icons a:hover{
-    position: relative;
-    /*bottom: 10vh;*/
-    padding: 7px;
-    margin-top: 5%;
-    filter: invert(100%);
-
-  }
-
-  .icons img {
-    width: 2vw;
-  }
-
-  #resume {
-    text-decoration: none;
-    font-size: 1.0em;
-    margin-top: 3vh;
-    padding: 1vw;
-    letter-spacing: .3em;
-    font-family: 'Poppins', sans-serif;
-    letter-spacing: .5em;
-    color: black;
-  }
 
 
 
@@ -1789,15 +1711,15 @@ html, body {
 @media screen and (min-width: 1850px) and (max-width: 2150px) {
 
 
+.middle {
+  width: 365vw;
+}
 
-  .middle {
-    width: 7500px;
-  }
 
   #name {
     position: relative;
     left: 16vw;
-    bottom: 5vh;
+    top: 5vh;
     font-family: 'Covered By Your Grace', cursive;
     display: inline-block;
     height: 40vh;
@@ -1805,23 +1727,10 @@ html, body {
   }
 
   #scroll-title {
-    display: inline-block;
-    position: relative;
-    text-align: center;
-    left: 40vw;
+    /*position: relative;*/
+    left: 34vw;
     top: 40vh;
-    font-size: 3.0em;
-    /*font-weight: 100;*/
-    font-family: 'Montserrat', sans-serif;
-    -webkit-text-stroke: 0.6px black;
-    color: white;
-    text-shadow:
-      2.5px 2.5px 0 #000,
-    -1px -1px 0 #000,
-     2px -1px 0 #000,
-     -1px 1px 0 #000,
-      1px 1px 0 #000;
-
+    font-size: 3.4em;
   }
 
 
@@ -1830,7 +1739,6 @@ html, body {
     position: relative;
     left: 80vw;
     height: 90vh;
-
 
 
   }
@@ -1960,77 +1868,7 @@ html, body {
     width: 10vw;
   }
 
-  #profile {
-    position: relative;
-    bottom: 38vh;
-    opacity: 0.7;
-    right: 2vw;
-  }
 
-  #profile {
-    width: 15vw;
-  }
-
-  .about-me {
-    display: inline-block;
-    position: relative;
-    left: 165vw;
-    top: 40vh;
-    line-height: 1.7em;
-    height: 100vh;
-    width: 35vw;
-    text-align: center;
-    padding-top: 50vh;
-    color: black;
-    background-color: rgba(255, 255, 255, 0.4);
-    font-size: 1.4em;
-  }
-
-  .about-me p {
-    display: inline-block;
-    position: absolute;
-    right: 7vw;
-    top: 45vh;
-    width: 25vw;
-    opacity: 0.7;
-    font-family: 'Poppins', sans-serif;
-
-  }
-
-
-  .icons a{
-    position: relative;
-    bottom: 6vh;
-    padding: 7px;
-    margin-top: 10%;
-    right: 2vw;
-    text-decoration: none;
-
-  }
-
-  .icons img {
-    width: 2vw;
-  }
-
-  .icons a:hover{
-    position: relative;
-    /*bottom: 10vh;*/
-    padding: 7px;
-    margin-top: 5%;
-    filter: invert(100%);
-
-  }
-
-  #resume {
-    text-decoration: none;
-    font-size: 1.1em;
-    margin-top: 3vh;
-    padding: 1vw;
-    letter-spacing: .3em;
-    font-family: 'Poppins', sans-serif;
-    letter-spacing: .5em;
-    color: black;
-  }
 
 
   #home{
@@ -2148,7 +1986,7 @@ html, body {
     padding: 10px;
     background-color: rgba(0, 0, 0, 0.4);
     color: white;
-    font-size: 1.0em;
+    font-size: 1.0em;x
     text-decoration: none;
     letter-spacing: .3em;
     font-family: 'Poppins', sans-serif;
@@ -2162,6 +2000,6 @@ html, body {
   }
 
   .middle {
-    width: 4000px;
+    width: 410vw;
   }
 }
