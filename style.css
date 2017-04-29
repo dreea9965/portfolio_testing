@@ -411,15 +411,13 @@ html, body {
     /*height: 2750px;*/
     /*height: 400vh;*/
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.4);
-
 
   }
 
 
   .surroundContainer {
-    height: 100vw;
-    width: 100vw;
+    height: 100%;
+    width: 100%;
     white-space: nowrap;
     /*background-image: url("images/succulent-right.png");*/
     /*background-repeat: repeat-x;*/
@@ -465,7 +463,7 @@ html, body {
     display: inline-block;
     position: absolute;
     /*bottom: 3vh;*/
-    left: 35vw;
+    left: 18vw;
     top: 105vh;
     /*background-color: rgba(0, 0, 0, 0.4);*/
 
@@ -480,7 +478,7 @@ html, body {
 
   .drawing_things {
     position: absolute;
-    left: 25vw;
+    left: 15vw;
     top: 200vh;
     opacity: .8;
     display: inline-block;
@@ -500,7 +498,7 @@ html, body {
     position: absolute;
     display: inline-block;
     top: 200vh;
-    left: 70vw;
+    left: 60vw;
     background-image: url(images/smarta2-mobile.png);
     width: 35%;
     height: 35vh;
@@ -519,7 +517,7 @@ html, body {
 
   .tictactoe {
     position: absolute;
-    left: 25vw;
+    left: 15vw;
     /*margin-left: 65px;*/
     top: 230vh;
     opacity: .8;
@@ -537,7 +535,7 @@ html, body {
 
   .blackjack {
     position: absolute;
-    left: 70vw;
+    left: 60vw;
     top: 230vh;
     opacity: .8;
     display: inline-block;
@@ -575,7 +573,7 @@ html, body {
     line-height: 1.2em;
     height: 20vh;
     width: 25vw;
-    background-color: rgba(0, 0, 0, 0);
+    /*border: 2px solid white;*/
     text-align: left;
     padding-top: 50vh;
     color: black;
@@ -671,14 +669,14 @@ html, body {
     .horizon
     {
       z-index: 0;
-      width: 100vw;
+      width: 400px;
       opacity: 0.9;
     }
 
     .middle
     {
       z-index: 0;
-      width: 100vw;
+      width: 400px;
     }
 
     #home {
@@ -1147,7 +1145,7 @@ html, body {
 
     .tictactoe {
       position: absolute;
-      left: 15vw;
+      left: 0vw;
       top: 230vh;
       opacity: .8;
       display: inline-block;
