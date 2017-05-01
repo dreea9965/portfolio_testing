@@ -53,7 +53,7 @@ h1
 {
   z-index: 500;
   /*width: 5000px;*/
-  width: 390vw;
+  width: 385vw;
 }
 
 #home {
@@ -384,7 +384,7 @@ html, body {
 
 /*iphone5 mobile phone*/
 
-@media screen and (max-width: 330px) {
+@media screen and (max-width: 380px) {
 
   #background {
     display: none;
@@ -577,6 +577,7 @@ html, body {
     text-align: left;
     padding-top: 50vh;
     color: black;
+    background-color: rgba(0, 0, 0, 0);
 
     /*font-size: .9em;*/
   }
@@ -695,7 +696,7 @@ html, body {
 
 
 /*//mobile phone media query*/
-@media screen and (min-width:350px) and (max-width: 700px) {
+@media screen and (min-width:400px) and (max-width: 700px) {
 
 
   #background {
@@ -888,6 +889,8 @@ html, body {
     color: black;
     background-color: none;
     font-size: 1.0em;
+    background-color: rgba(0, 0, 0, 0);
+
   }
 
   .about-me p {
@@ -1202,7 +1205,7 @@ html, body {
       line-height: 1.6em;
       height: 20vh;
       width: 20vw;
-      /*border: 2px solid white;*/
+      background-color: rgba(0, 0, 0, 0);
       text-align: center;
       padding-top: 50vh;
       color: black;

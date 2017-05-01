@@ -1,0 +1,300 @@
+
+html {
+background-image: url("images/project-background.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+height: 100%;
+overflow: hidden;
+
+}
+
+#home {
+position: relative;
+top: 2vh;
+padding: 5px;
+background-color: rgba(0, 0, 0, 1);
+color: white;
+font-size: 1.3em;
+text-decoration: none;
+letter-spacing: .3em;
+font-family: 'Poppins', sans-serif;
+width: 10vw;
+text-align: center;
+}
+
+#home:hover {
+font-size: 1.4em;
+filter: invert(100%);
+
+}
+
+.project-image {
+display: inline-block;
+position: relative;
+top: 20vh;
+right: 27vw;
+width: 18vw;
+height: 40vh;
+}
+
+.project-image img:hover {
+/*background-image: url(images/drawingthings-hover.png);*/
+filter: saturate(50%);
+
+}
+
+.project-image img {
+  height: 40vh;
+}
+
+.project-background {
+position: relative;
+left: 10vw;
+top: 5vh;
+display: inline-block;
+width: 80vw;
+height: 80vh;
+background-color: gray;
+opacity: 0.7;
+text-align: center;
+
+}
+h2 {
+font-family: 'Poppins', sans-serif;
+color: white;
+display: inline-block;
+position: relative;
+bottom: 30vh;
+left: 20vw;
+}
+
+.project-background p {
+
+padding-left: 30vw;
+padding-right: 4vw;
+text-align: center;
+font-family: 'Poppins', sans-serif;
+font-size: 1.3em;
+position: relative;
+bottom: 35vh;
+
+}
+
+.description {
+padding-top: 10vh;
+}
+
+.technologies {
+
+}
+.icons {
+position: relative;
+display: inline-block;
+left: 10vw;
+bottom: 30vh;
+}
+
+.icons:hover {
+filter: invert(100%);
+
+
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  color: purple;
+}
+
+@media only screen and (max-width: 900px) and (min-width: 710px) {
+#home {
+position: relative;
+top: 4vh;
+padding: 5px;
+background-color: rgba(0, 0, 0, 1);
+color: white;
+font-size: 1.1em;
+text-decoration: none;
+letter-spacing: .3em;
+font-family: 'Poppins', sans-serif;
+width: 10vw;
+text-align: center;
+}
+
+#home:hover {
+font-size: 1.2em;
+filter: invert(100%);
+
+}
+
+.project-image {
+display: inline-block;
+position: relative;
+top: 15vh;
+right: 33vw;
+width: 18vw;
+height: 40vh;
+}
+
+.project-image img:hover {
+/*background-image: url(images/drawingthings-hover.png);*/
+filter: saturate(50%);
+
+}
+
+.project-background {
+position: absolute;
+right: 10vw;
+top: 10vh;
+display: inline-block;
+width: 80vw;
+height: 80vh;
+background-color: gray;
+opacity: 0.6;
+text-align: center;
+
+}
+h2 {
+font-family: 'Poppins', sans-serif;
+color: white;
+display: inline-block;
+position: relative;
+bottom: 30vh;
+left: 20vw;
+}
+
+.project-background p {
+
+padding-left: 30vw;
+padding-right: 4vw;
+margin-left: 7vw;
+text-align: center;
+font-family: 'Poppins', sans-serif;
+font-size: .9em;
+position: relative;
+bottom: 35vh;
+
+}
+
+.description {
+padding-top: 10vh;
+}
+
+.technologies {
+
+}
+.icons {
+position: relative;
+display: inline-block;
+left: 15vw;
+bottom: 30vh;
+}
+
+.icons:hover {
+filter: invert(100%);
+
+
+}
+}
+
+@media only screen and (max-width: 690px)  {
+
+
+html {
+  background-image: url("images/project-backgroundmobile.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+
+}
+
+#home {
+  font-size: .9em;
+}
+
+#home:hover {
+  font-size: 1em;
+
+}
+
+.project-image {
+  display: inline-block;
+  position: relative;
+  top: 10vh;
+  right:30vw;
+  width: 10vw;
+  height: 40vh;
+}
+
+.project-image img {
+  width: 22vw;
+  height: 20vh
+}
+
+.project-image img:hover {
+  /*background-image: url(images/drawingthings-hover.png);*/
+  filter: saturate(50%);
+
+}
+
+.project-background {
+  position: relative;
+  right: 10vw;
+  top: 10vh;
+  display: inline-block;
+  width: 80vw;
+  height: 80vh;
+  background-color: gray;
+  opacity: 0.7;
+  text-align: center;
+
+}
+h2 {
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  display: inline-block;
+  position: relative;
+  bottom: 15vh;
+  left: 7vw;
+}
+
+.project-background p {
+
+  padding-left: 30vw;
+  padding-right: 4vw;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  font-size: .9em;
+  position: relative;
+  bottom: 15vh;
+  right: 13vw;
+
+}
+
+.description {
+  padding-top: 10vh;
+}
+
+.technologies {
+
+}
+.icons {
+  position: relative;
+  display: inline-block;
+  left: 2vw;
+  bottom: 14vh;
+}
+
+.icons img {
+  width: 6vw;
+}
+
+.icons:hover {
+  filter: invert(100%);
+
+
+}
+}
