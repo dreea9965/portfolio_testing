@@ -395,11 +395,11 @@ html, body {
 
   .horizon {
     display: inline-block;
-    height: 400vh;
+    height: 410vh;
     /*width: 105%;*/
     background-size: cover;
     background-image: url("images/fullpagedown-mobile.jpg");
-
+    background-size: 100% 100%;
   }
 
   #skill-title, #project-title {
@@ -479,7 +479,7 @@ html, body {
   .drawing_things {
     position: absolute;
     left: 15vw;
-    top: 200vh;
+    top: 210vh;
     opacity: .8;
     display: inline-block;
     width: 35%;
@@ -497,7 +497,7 @@ html, body {
   .smarta {
     position: absolute;
     display: inline-block;
-    top: 200vh;
+    top: 210vh;
     left: 60vw;
     background-image: url(images/smarta2-mobile.png);
     width: 35%;
@@ -519,7 +519,7 @@ html, body {
     position: absolute;
     left: 15vw;
     /*margin-left: 65px;*/
-    top: 230vh;
+    top: 240vh;
     opacity: .8;
     display: inline-block;
     background-image: url(images/tic-tac-toe2-mobile.png);
@@ -536,7 +536,7 @@ html, body {
   .blackjack {
     position: absolute;
     left: 60vw;
-    top: 230vh;
+    top: 240vh;
     opacity: .8;
     display: inline-block;
     background-image: url(images/blackjack2-mobile.png);
@@ -568,7 +568,7 @@ html, body {
     display: inline-block;
     position: absolute;
     left: 6vw;
-    top: 305vh;
+    top: 315vh;
     /*bottom: 14vh;*/
     line-height: 1.2em;
     height: 20vh;
