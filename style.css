@@ -144,6 +144,22 @@ html, body {
 
 }
 
+#scroll-up {
+  position: absolute;
+  bottom: 20vh;
+  left: 30vw;
+  z-index: 1000;
+
+}
+
+#scroll-down{
+  position: absolute;
+  bottom: 20vh;
+  left: 40vw;
+  z-index: 1000;
+
+}
+
 
 #scroll-title {
   display: inline-block;

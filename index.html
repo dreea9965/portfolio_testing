@@ -53,6 +53,14 @@
           <span id="subname">  front end developer </span>
           </div> -->
            <!-- <img id= "scroll-title" class= "animated rotateOutDownRight" src = "icons/scroll.png"> -->
+
+           <span id="scroll-up">
+             <button type="button" name="scroll up"></button>
+           </span>
+
+           <span id="scroll-down">
+             <button type="button" name="scroll down"></button>
+           </span>
           <div id= "scroll-title">
             <!-- <span style = "color: white"> -->
 
@@ -72,22 +80,24 @@
 
 
       <div class="projects">
-      <a href="project-drawingthings.html" class="drawing_things">
+      <!-- <a href="project-drawingthings.html" class="drawing_things"> -->
+      <a href="http://drawing-things.andreeauta.com/" class="drawing_things">
 
         </a>
 
 
 
-      <a href="project-smarta.html" class="smarta">
-
+      <!-- <a href="project-smarta.html" class="smarta"> -->
+      <a href="http://smarta.andreeauta.com/" class="smarta">
       </a>
 
+      <!-- <a href="tic-tac-toe/tictactoe.html" class="tictactoe"> -->
+
       <a href="tic-tac-toe/tictactoe.html" class="tictactoe">
-
-
         </a>
 
 
+    <!-- <a href="blackjack/index.html" class="blackjack"> -->
     <a href="blackjack/index.html" class="blackjack">
       </a>
 
@@ -230,7 +240,19 @@
     // });
 
 
+    var scrolled = 10;
+  	$('#scrollup').click(function() {
+     $(".middle").animate({
+     scrollTop:  $(".middle").scrollTop() - scrolled
+     });
+       });
 
+
+    	$('#scrolldown').click(function() {
+     $(".middle").animate({
+     scrollTop:  $(".middle").scrollTop() + scrolled
+     });
+       });
 
 }
 
