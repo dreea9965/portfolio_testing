@@ -59,13 +59,13 @@ opacity: 0.7;
 text-align: center;
 
 }
+
 h2 {
 font-family: 'Poppins', sans-serif;
 color: white;
-display: inline-block;
-position: relative;
-bottom: 30vh;
-left: 20vw;
+text-align: center;
+
+
 }
 
 .project-background p {
@@ -87,7 +87,7 @@ padding-top: 10vh;
 .technologies {
 
 }
-.icons {
+/*.icons {
 position: relative;
 display: inline-block;
 left: 10vw;
@@ -98,7 +98,7 @@ bottom: 30vh;
 filter: invert(100%);
 
 
-}
+}*/
 
 a {
   text-decoration: none;
@@ -157,14 +157,7 @@ opacity: 0.6;
 text-align: center;
 
 }
-h2 {
-font-family: 'Poppins', sans-serif;
-color: white;
-display: inline-block;
-position: relative;
-bottom: 30vh;
-left: 20vw;
-}
+
 
 .project-background p {
 
@@ -200,8 +193,8 @@ filter: invert(100%);
 }
 }
 
-@media only screen and (max-width: 690px)  {
 
+@media only screen and (max-width: 690px){
 
 html {
   background-image: url("images/project-backgroundmobile.jpg");
@@ -223,22 +216,17 @@ html {
 .project-image {
   display: inline-block;
   position: relative;
-  top: 10vh;
-  right:30vw;
+  top: 0vh;
+  right:8vw;
   width: 10vw;
   height: 40vh;
 }
 
 .project-image img {
-  width: 22vw;
-  height: 20vh
+  width: 26vw;
+  height: 19vh
 }
 
-.project-image img:hover {
-  /*background-image: url(images/drawingthings-hover.png);*/
-  filter: saturate(50%);
-
-}
 
 .project-background {
   position: relative;
@@ -252,36 +240,31 @@ html {
   text-align: center;
 
 }
-h2 {
-  font-family: 'Poppins', sans-serif;
-  color: white;
-  display: inline-block;
-  position: relative;
-  bottom: 15vh;
-  left: 7vw;
-}
+
 
 .project-background p {
 
-  padding-left: 30vw;
-  padding-right: 4vw;
+  padding-left: 20vw;
+  padding-right: 0vw;
   text-align: center;
   font-family: 'Poppins', sans-serif;
-  font-size: .9em;
+  font-size: .8em;
   position: relative;
   bottom: 15vh;
-  right: 13vw;
+  right: 10vw;
 
 }
 
 .description {
-  padding-top: 10vh;
+  padding-top: 0vh;
 }
+
+
 
 .technologies {
 
 }
-.icons {
+/*.icons {
   position: relative;
   display: inline-block;
   left: 2vw;
@@ -296,5 +279,5 @@ h2 {
   filter: invert(100%);
 
 
-}
+}*/
 }
