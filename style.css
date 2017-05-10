@@ -204,6 +204,8 @@ html, body {
   position: relative;
   left: 90vw;
   top: 40vh;
+  opacity: 0.8;
+
 }
 
 
@@ -290,6 +292,7 @@ html, body {
   position: relative;
   left: 100vw;
   top: 40vh;
+  opacity: 0.8;
 }
 
 
