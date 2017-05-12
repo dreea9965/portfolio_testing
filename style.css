@@ -228,7 +228,7 @@ html, body {
 
 
 .drawing_things:hover {
-  background-image: url(images/drawingthings-hover.png);
+  background-image: url(images/drawingthings-hover2.png);
 
 }
 
@@ -244,7 +244,7 @@ html, body {
 }
 
 .smarta:hover {
-  background-image: url(images/smarta-hover.png);
+  background-image: url(images/smarta-hover2.png);
   /*width: 15vw;
   height: 36vh;*/
 }
@@ -266,7 +266,7 @@ html, body {
 .tictactoe:hover {
   /*width: 15vw;
   height: 36vh;*/
-  background-image: url(images/tictactoe-hover.png);
+  background-image: url(images/tictactoe-hover2.png);
 }
 
 
@@ -283,7 +283,7 @@ html, body {
 }
 
 .blackjack:hover {
-  background-image: url(images/blackjack-hover.png);
+  background-image: url(images/blackjack-hover2.png);
 }
 
 
@@ -510,7 +510,7 @@ html, body {
 
 
   /*.drawing_things:hover {
-    background-image: url(images/drawingthings-hover.png);
+    background-image: url(images/drawingthings-hover2.png);
 
   }*/
 
@@ -527,7 +527,7 @@ html, body {
   }
 
   /*.smarta:hover {
-    background-image: url(images/smarta-hover.png);
+    background-image: url(images/smarta-hover2.png);
   }*/
 
 .smart:hover {
@@ -826,7 +826,7 @@ html, body {
 
 
   /*.drawing_things:hover {
-    background-image: url(images/drawingthings-hover.png);
+    background-image: url(images/drawingthings-hover2.png);
 
   }*/
 
@@ -843,7 +843,7 @@ html, body {
   }
 
   /*.smarta:hover {
-    background-image: url(images/smarta-hover.png);
+    background-image: url(images/smarta-hover2.png);
   }*/
 
 
@@ -879,7 +879,7 @@ html, body {
   }
 
   /*.blackjack:hover {
-    background-image: url(images/blackjack-hover.png);
+    background-image: url(images/blackjack-hover2.png);
   }*/
 
 
@@ -1144,7 +1144,7 @@ html, body {
     .drawing_things:hover {
       /*width: 15vw;
       height: 36vh;*/
-      background-image: url(images/drawingthings-hover.png);
+      background-image: url(images/drawingthings-hover2.png);
 
     }
 
@@ -1161,7 +1161,7 @@ html, body {
     }
 
     .smarta:hover {
-      background-image: url(images/smarta-hover.png);
+      background-image: url(images/smarta-hover2.png);
     }
 
 
@@ -1199,7 +1199,7 @@ html, body {
     }
 
     .blackjack:hover {
-      background-image: url(images/blackjack-hover.png);
+      background-image: url(images/blackjack-hover2.png);
     }
 
 
@@ -1434,7 +1434,7 @@ html, body {
 
 
   .drawing_things:hover {
-    background-image: url(images/drawingthings-hover.png);
+    background-image: url(images/drawingthings-hover2.png);
 
   }
 
@@ -1450,7 +1450,7 @@ html, body {
   }
 
   .smarta:hover {
-    background-image: url(images/smarta-hover.png);
+    background-image: url(images/smarta-hover2.png);
     /*width: 15vw;
     height: 36vh;*/
   }
@@ -1489,7 +1489,7 @@ html, body {
   }
 
   .blackjack:hover {
-    background-image: url(images/blackjack-hover.png);
+    background-image: url(images/blackjack-hover2.png);
   }
 
   #skill-title {
@@ -1638,7 +1638,7 @@ html, body {
 
 
   .drawing_things:hover {
-    background-image: url(images/drawingthings-hover.png);
+    background-image: url(images/drawingthings-hover2.png);
 
   }
 
@@ -1654,7 +1654,7 @@ html, body {
   }
 
   .smarta:hover {
-    background-image: url(images/smarta-hover.png);
+    background-image: url(images/smarta-hover2.png);
     /*width: 15vw;
     height: 36vh;*/
   }
@@ -1693,7 +1693,7 @@ html, body {
   }
 
   .blackjack:hover {
-    background-image: url(images/blackjack-hover.png);
+    background-image: url(images/blackjack-hover2.png);
   }
 
   #skill-title {
@@ -1797,7 +1797,7 @@ html, body {
 
 
   .drawing_things:hover {
-    background-image: url(images/drawingthings-hover.png);
+    background-image: url(images/drawingthings-hover2.png);
 
   }
 
@@ -1817,7 +1817,7 @@ html, body {
   }
 
   .smarta:hover {
-    background-image: url(images/smarta-hover.png);
+    background-image: url(images/smarta-hover2.png);
     background-size: cover;
 
     /*width: 15vw;
@@ -1868,7 +1868,7 @@ html, body {
   }
 
   .blackjack:hover {
-    background-image: url(images/blackjack-hover.png);
+    background-image: url(images/blackjack-hover2.png);
     background-size: cover;
 
   }
