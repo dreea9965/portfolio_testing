@@ -861,7 +861,7 @@ html, body {
   }
 
   /*.tictactoe:hover {
-    background-image: url(images/tic-tac-toe-hover2.png);
+    background-image: url(images/tictactoe-hover2.png);
   }*/
 
 
@@ -879,7 +879,7 @@ html, body {
   }
 
   /*.blackjack:hover {
-    background-image: url(images/blackjack2-hover.png);
+    background-image: url(images/blackjack-hover.png);
   }*/
 
 
@@ -1181,7 +1181,7 @@ html, body {
     .tictactoe:hover {
       /*width: 15vw;
       height: 36vh;*/
-      background-image: url(images/tic-tac-toe-hover2.png);
+      background-image: url(images/tictactoehover.png);
     }
 
 
@@ -1199,7 +1199,7 @@ html, body {
     }
 
     .blackjack:hover {
-      background-image: url(images/blackjack2-hover.png);
+      background-image: url(images/blackjack-hover.png);
     }
 
 
@@ -1472,7 +1472,7 @@ html, body {
   .tictactoe:hover {
     /*width: 15vw;
     height: 36vh;*/
-    background-image: url(images/tic-tac-toe-hover2.png);
+    background-image: url(images/tictactoe-hover2.png);
   }
 
 
@@ -1489,7 +1489,7 @@ html, body {
   }
 
   .blackjack:hover {
-    background-image: url(images/blackjack2-hover.png);
+    background-image: url(images/blackjack-hover.png);
   }
 
   #skill-title {
@@ -1676,7 +1676,7 @@ html, body {
   .tictactoe:hover {
     /*width: 15vw;
     height: 36vh;*/
-    background-image: url(images/tic-tac-toe-hover2.png);
+    background-image: url(images/tictactoe-hover2.png);
   }
 
 
@@ -1693,7 +1693,7 @@ html, body {
   }
 
   .blackjack:hover {
-    background-image: url(images/blackjack2-hover.png);
+    background-image: url(images/blackjack-hover.png);
   }
 
   #skill-title {
@@ -1845,7 +1845,7 @@ html, body {
   .tictactoe:hover {
     /*width: 15vw;
     height: 36vh;*/
-    background-image: url(images/tic-tac-toe-hover2.png);
+    background-image: url(images/tictactoe-hover2.png);
     background-size: cover;
 
   }
@@ -1868,7 +1868,7 @@ html, body {
   }
 
   .blackjack:hover {
-    background-image: url(images/blackjack2-hover.png);
+    background-image: url(images/blackjack-hover.png);
     background-size: cover;
 
   }
