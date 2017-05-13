@@ -173,10 +173,10 @@ html, body {
   font-size: 1.8em;
   /*font-weight: 100;*/
   font-family: 'Montserrat', sans-serif;
-  -webkit-text-stroke: 0.6px black;
+  -webkit-text-stroke: 0.3px black;
   color: white;
   text-shadow:
-    -1px 1px 0 #000,
+    -2px 2px 0 #000,
   -1px -1px 0 #000,
    1px -1px 0 #000,
    -1px 1px 0 #000,
@@ -609,7 +609,7 @@ html, body {
     position: absolute;
     left: 32vw;
     top: 1vh;
-    width: 55vw;
+    width: 40vw;
     opacity: 0.7;
     font-size: 0.4em;
     font-family: 'Poppins', sans-serif;
@@ -620,7 +620,7 @@ html, body {
 
   .icons a{
     position: relative;
-    bottom: 45vh;
+    bottom: 40vh;
     padding: 5px;
     margin-top: 5%;
     left: 37vw;
@@ -1118,13 +1118,14 @@ html, body {
       /*bottom: 3vh;*/
       left: 18vw;
       top: 105vh;
+
       /*background-color: rgba(0, 0, 0, 0.4);*/
 
 
     }
 
   #skill-icon-1 img {
-    width: 75vw;
+    width: 55vw;
 
   }
 
@@ -1222,7 +1223,7 @@ html, body {
       display: inline-block;
       position: absolute;
       left: 10vw;
-      top: 308vh;
+      top: 303vh;
       /*bottom: 14vh;*/
       line-height: 1.6em;
       height: 20vh;
@@ -1238,7 +1239,7 @@ html, body {
     .about-me p {
       display: inline-block;
       position: absolute;
-      left: 35vw;
+      left: 25vw;
       top: 1vh;
 
       /*width: 10vw;*/
@@ -1253,7 +1254,7 @@ html, body {
 
     .icons a{
       position: relative;
-      bottom: 5vh;
+      bottom: 50vh;
       padding: 5px;
       margin-top: 5%;
       left: 40vw;
@@ -1280,6 +1281,8 @@ html, body {
       left: 1vw;
       top: 25vh;
       font-size: 1.3em;
+      background-color: rgba(0, 0, 0, 0);
+
       /*background-color: rgba(0, 0, 0, 0.4);*/
       margin-top: 3vh;
       padding: 1vw;
