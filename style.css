@@ -136,13 +136,15 @@ html, body {
 
 #name {
   position: relative;
-  left: 16vw;
-  bottom: 9vh;
+  left: 10vw;
+  bottom: 5vh;
   font-family: 'Covered By Your Grace', cursive;
   display: inline-block;
-  height: 40vh;
+  /*height: 40vh;*/
 
 }
+
+
 
 /*#scroll-up {
   position: absolute;
@@ -166,17 +168,17 @@ html, body {
   /*top: 20vh;*/
   position: relative;
   text-align: center;
-  left: 40vw;
-  top: 30vh;
+  left: 25vw;
+  top: 35vh;
   font-size: 1.8em;
   /*font-weight: 100;*/
   font-family: 'Montserrat', sans-serif;
   -webkit-text-stroke: 0.6px black;
   color: white;
   text-shadow:
-    2.5px 2.5px 0 #000,
+    -1px 1px 0 #000,
   -1px -1px 0 #000,
-   2px -1px 0 #000,
+   1px -1px 0 #000,
    -1px 1px 0 #000,
     1px 1px 0 #000;
 
@@ -189,7 +191,7 @@ html, body {
   display: inline-block;
   position: relative;
   /*bottom: 3vh;*/
-  left: 70vw;
+  left: 50vw;
   height: 90vh;
   /*background-color: rgba(255, 255, 255, 0.4);*/
 
@@ -202,7 +204,7 @@ html, body {
 #skill-title {
   display: inline-block;
   position: relative;
-  left: 90vw;
+  left: 70vw;
   top: 40vh;
   opacity: 0.8;
 
@@ -217,7 +219,7 @@ html, body {
 
 .drawing_things {
   position: relative;
-  left: 120vw;
+  left: 100vw;
   opacity: .8;
   display: inline-block;
   width: 14vw;
@@ -235,7 +237,7 @@ html, body {
 .smarta {
   position: relative;
   display: inline-block;
-  left: 130vw;
+  left: 110vw;
   background-image: url(images/smarta2.png);
   width: 14vw;
   height: 35vh;
@@ -253,7 +255,7 @@ html, body {
 
 .tictactoe {
   position: relative;
-  left: 140vw;
+  left: 120vw;
   /*margin-left: 65px;*/
   opacity: .8;
   display: inline-block;
@@ -272,7 +274,7 @@ html, body {
 
 .blackjack {
   position: relative;
-  left: 150vw;
+  left: 130vw;
   opacity: .8;
   display: inline-block;
   background-image: url(images/blackjack2.png);
@@ -290,7 +292,7 @@ html, body {
 #project-title {
   display: inline-block;
   position: relative;
-  left: 100vw;
+  left:80vw;
   top: 40vh;
   opacity: 0.8;
 }
@@ -298,7 +300,7 @@ html, body {
 
 #profile {
   position: relative;
-  bottom: 45vh;
+  bottom: 48vh;
   opacity: 0.7;
   right: 2vw;
   width: 17vw;
@@ -309,7 +311,7 @@ html, body {
 .about-me {
   display: inline-block;
   position: relative;
-  left: 147vw;
+  left: 130vw;
   top: 50vh;
   /*bottom: 14vh;*/
   line-height: 1.7em;
@@ -329,7 +331,7 @@ html, body {
   display: inline-block;
   position: absolute;
   right: 2vw;
-  top: 40vh;
+  top: 38vh;
   width: 35vw;
   opacity: 0.7;
   padding-left: 5vw;
@@ -342,7 +344,7 @@ html, body {
 
 .icons a{
   position: relative;
-  bottom: 7vh;
+  bottom: 5vh;
   padding: 7px;
   margin-top: 5%;
   right: 2vw;
@@ -384,7 +386,7 @@ html, body {
 
 #home{
   position: relative;
-  left: 202vw;
+  left: 185vw;
   padding: 10px;
   background-color: rgba(0, 0, 0, 0.4);
   color: white;
