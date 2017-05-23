@@ -190,16 +190,11 @@ html, body {
 #skill-icon-1 {
   display: inline-block;
   position: relative;
-  /*bottom: 3vh;*/
   left: 50vw;
   height: 90vh;
-  /*background-color: rgba(255, 255, 255, 0.4);*/
-
 }
 
-/*#skill-icon-1 img {
-  width: 37vw;
-}*/
+
 
 #skill-title {
   display: inline-block;
@@ -1362,14 +1357,46 @@ html, body {
     position: relative;
     top: 3vh;
   }
+  #profile {
+    position: relative;
+    bottom: 45vh;
+    opacity: 0.7;
+    right: 2vw;
+    width: 17vw;
+  }
+
+
+
+  .about-me {
+    display: inline-block;
+    position: relative;
+    left: 140vw;
+    top: 50vh;
+    /*bottom: 14vh;*/
+    line-height: 1.7em;
+    height: 100vh;
+    width: 35vw;
+    /*border: 2px solid white;*/
+    text-align: center;
+    padding-top: 50vh;
+    /*padding-bottom: 10px;*/
+    color: black;
+    background-color: rgba(255, 255, 255, 0.5);
+    /*opacity: 0.7;*/
+    font-size: 1.0em;
+  }
+
+
+
+
 
 
 
   #home{
     position: relative;
     /*bottom: 45vh;*/
-    left: 197vw;
-    bottom: 37vh;
+    left: 188vw;
+    bottom: 0vh;
     padding: 10px;
     background-color: rgba(0, 0, 0, 0.4);
     color: white;
@@ -1717,14 +1744,94 @@ html, body {
   }
 
 
+  #profile {
+    position: relative;
+    bottom: 40vh;
+    opacity: 0.7;
+    right: 2vw;
+    width: 17vw;
+  }
+
+
+
+  .about-me {
+    display: inline-block;
+    position: relative;
+    left: 140vw;
+    top: 50vh;
+    /*bottom: 14vh;*/
+    line-height: 1.7em;
+    height: 100vh;
+    width: 35vw;
+    /*border: 2px solid white;*/
+    text-align: center;
+    padding-top: 50vh;
+    /*padding-bottom: 10px;*/
+    color: black;
+    background-color: rgba(255, 255, 255, 0.5);
+    /*opacity: 0.7;*/
+    font-size: 1.2em;
+  }
+
+
+
+  .about-me-text {
+    display: inline-block;
+    position: absolute;
+    right: 2vw;
+    top: 45vh;
+    width: 35vw;
+    opacity: 0.7;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    font-family: 'Poppins', sans-serif;
+
+  }
+
+
+
+  .icons a{
+    position: relative;
+    width: 5vw;
+    bottom: 8vh;
+    padding: 7px;
+    margin-top: 5%;
+    right: 2vw;
+    text-decoration: none;
+
+  }
+
+  .icons a:hover{
+    position: relative;
+    /*bottom: 10vh;*/
+    padding: 7px;
+    margin-top: 5%;
+    filter: invert(100%);
+
+  }
+
+
+  #resume {
+    text-decoration: none;
+    font-size: 1.2em;
+    margin-top: 3vh;
+    padding-left: 1vw;
+    letter-spacing: .3em;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: .5em;
+    color: black;
+    background-color: rgba(255, 255, 255, 0.4);
+  }
+
+
 
 
 
 
   #home{
     position: relative;
-    left: 180vw;
-    bottom: 30vh;
+    left: 197vw;
+    bottom: 0vh;
     padding: 10px;
     background-color: rgba(0, 0, 0, 0.4);
     color: white;
@@ -1753,43 +1860,46 @@ html, body {
 
   #name {
     position: relative;
-    left: 16vw;
-    top: 5vh;
+    left: 10vw;
+    top: 2vh;
     font-family: 'Covered By Your Grace', cursive;
     display: inline-block;
-    height: 40vh;
+    height: 46vh;
 
   }
 
   #scroll-title {
     /*position: relative;*/
-    left: 34vw;
-    top: 40vh;
-    font-size: 3.4em;
+    left: 25vw;
+    top: 50vh;
+    font-size: 3.0em;
   }
 
 
   #skill-icon-1 {
     display: inline-block;
     position: relative;
-    left: 80vw;
+    left: 60vw;
     height: 90vh;
-
-
   }
+
+  #skill-icon-1 img{
+
+    width: 25vw;
+  }
+
 
 
   .projects {
     display: inline-block;
     position: relative;
-    top: 0vh;
-
+    top: 13vh;
   }
 
 
   .drawing_things {
     position: relative;
-    left: 120vw;
+    left: 95vw;
     bottom: 10vh;
     opacity: .8;
     display: inline-block;
@@ -1809,7 +1919,7 @@ html, body {
   .smarta {
     position: relative;
     display: inline-block;
-    left: 125vw;
+    left: 105vw;
     bottom: 10vh;
 
     background-image: url(images/smarta2.png);
@@ -1833,7 +1943,7 @@ html, body {
 
   .tictactoe {
     position: relative;
-    left: 130vw;
+    left: 115vw;
     bottom: 10vh;
 
     /*margin-left: 65px;*/
@@ -1858,7 +1968,7 @@ html, body {
 
   .blackjack {
     position: relative;
-    left: 135vw;
+    left: 125vw;
     bottom: 10vh;
 
     opacity: .8;
@@ -1881,7 +1991,7 @@ html, body {
   #skill-title {
     display: inline-block;
     position: relative;
-    left: 85vw;
+    left: 73vw;
     top: 40vh;
     width: 100px;
   }
@@ -1895,7 +2005,7 @@ html, body {
   #project-title {
     display: inline-block;
     position: relative;
-    left: 95vw;
+    left: 78vw;
     top: 40vh;
   }
 
@@ -1903,17 +2013,58 @@ html, body {
     width: 10vw;
   }
 
+  #profile {
+    position: relative;
+    bottom: 40vh;
+    opacity: 0.7;
+    right: 2vw;
+    width: 17vw;
+  }
+
+
+
+  .about-me {
+    display: inline-block;
+    position: relative;
+    left: 128vw;
+    top: 50vh;
+    /*bottom: 14vh;*/
+    line-height: 1.7em;
+    height: 100vh;
+    width: 35vw;
+    /*border: 2px solid white;*/
+    text-align: center;
+    padding-top: 50vh;
+    /*padding-bottom: 10px;*/
+    color: black;
+    background-color: rgba(255, 255, 255, 0.5);
+    /*opacity: 0.7;*/
+    font-size: 1.5em;
+  }
+
+  .about-me-text {
+    display: inline-block;
+    position: absolute;
+    right: 2vw;
+    top: 45vh;
+
+  }
+
+
+
+
+
 
 
 
   #home{
     position: relative;
-    left: 215vw;
-    top: 0vh;
+    left: 182vw;
+    top: 12vh;
     padding: 10px;
     background-color: rgba(0, 0, 0, 0.4);
     color: white;
-    font-size: 1.6em;
+    font-size: 1.8em;
     text-decoration: none;
     letter-spacing: .3em;
     font-family: 'Poppins', sans-serif;
