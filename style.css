@@ -299,6 +299,7 @@ html, body {
   opacity: 0.7;
   right: 2vw;
   width: 17vw;
+  margin-bottom: 20px;
 }
 
 
@@ -345,14 +346,11 @@ html, body {
   margin-top: 5%;
   right: 2vw;
   text-decoration: none;
+  margin-top: 10px;
 
 }
 
 .icons a:hover{
-  position: relative;
-  /*bottom: 10vh;*/
-  padding: 7px;
-  margin-top: 5%;
   filter: invert(100%);
 
 }
