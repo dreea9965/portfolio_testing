@@ -248,22 +248,22 @@ html, body {
 
 
 
-.tictactoe {
+.handcrafted {
   position: relative;
   left: 120vw;
   /*margin-left: 65px;*/
   opacity: .8;
   display: inline-block;
-  background-image: url(images/tic-tac-toe2.png);
+  background-image: url(images/handcrafted.png);
   width: 14vw;
   height: 35vh;
   background-repeat: no-repeat;
 }
 
-.tictactoe:hover {
+.handcrafted:hover {
   /*width: 15vw;
   height: 36vh;*/
-  background-image: url(images/tictactoe-hover2.png);
+  background-image: url(images/handcraftedhover.png);
 }
 
 
@@ -532,20 +532,20 @@ html, body {
 }
 
 
-  .tictactoe {
+  .handcrafted {
     position: absolute;
     left: 15vw;
     /*margin-left: 65px;*/
     top: 240vh;
     opacity: .8;
     display: inline-block;
-    background-image: url(images/tic-tac-toe2-mobile.png);
+    background-image: url(images/handcrafted-mobile.png);
     width: 35%;
     height: 35vh;
     background-repeat: no-repeat;
   }
 
-  .tictactoe:hover {
+  .handcrafted:hover {
     background-image:none;
   }
 
@@ -845,20 +845,20 @@ html, body {
 
 
 
-  .tictactoe {
+  .handcrafted {
     position: absolute;
     left: 15vw;
     top: 240vh;
     opacity: .8;
     display: inline-block;
-    background-image: url(images/tic-tac-toe2-mobile.png);
+    background-image: url(images/handcrafted-mobile.png);
     width: 35%;
     height: 35vh;
     background-repeat: no-repeat;
   }
 
-  /*.tictactoe:hover {
-    background-image: url(images/tictactoe-hover2.png);
+  /*.handcrafted:hover {
+    background-image: url(images/handcraftedhover.png);
   }*/
 
 
@@ -1164,22 +1164,22 @@ html, body {
 
 
 
-    .tictactoe {
+    .handcrafted {
       position: absolute;
       left: 15vw;
       top: 230vh;
       opacity: .8;
       display: inline-block;
-      background-image: url(images/tic-tac-toe2.png);
+      background-image: url(images/handcrafted.png);
       width: 35%;
       height: 35vh;
       background-repeat: no-repeat;
     }
 
-    .tictactoe:hover {
+    .handcrafted:hover {
       /*width: 15vw;
       height: 36vh;*/
-      background-image: url(images/tictactoehover.png);
+      background-image: url(images/handcraftedhover.png);
     }
 
 
@@ -1489,22 +1489,22 @@ html, body {
 
 
 
-  .tictactoe {
+  .handcrafted {
     position: relative;
     left: 115vw;
     /*margin-left: 65px;*/
     opacity: .8;
     display: inline-block;
-    background-image: url(images/tic-tac-toe2.png);
+    background-image: url(images/handcrafted.png);
     width: 14vw;
     height: 35vh;
     background-repeat: no-repeat;
   }
 
-  .tictactoe:hover {
+  .handcrafted:hover {
     /*width: 15vw;
     height: 36vh;*/
-    background-image: url(images/tictactoe-hover2.png);
+    background-image: url(images/handcraftedhover.png);
   }
 
 
@@ -1693,22 +1693,22 @@ html, body {
 
 
 
-  .tictactoe {
+  .handcrafted {
     position: relative;
     left: 115vw;
     /*margin-left: 65px;*/
     opacity: .8;
     display: inline-block;
-    background-image: url(images/tic-tac-toe2.png);
+    background-image: url(images/handcrafted.png);
     width: 14vw;
     height: 35vh;
     background-repeat: no-repeat;
   }
 
-  .tictactoe:hover {
+  .handcrafted:hover {
     /*width: 15vw;
     height: 36vh;*/
-    background-image: url(images/tictactoe-hover2.png);
+    background-image: url(images/handcraftedhover.png);
   }
 
 
@@ -1941,7 +1941,7 @@ html, body {
 
 
 
-  .tictactoe {
+  .handcrafted {
     position: relative;
     left: 115vw;
     bottom: 10vh;
@@ -1949,7 +1949,7 @@ html, body {
     /*margin-left: 65px;*/
     opacity: .8;
     display: inline-block;
-    background-image: url(images/tic-tac-toe2.png);
+    background-image: url(images/handcrafted.png);
     width: 14vw;
     height: 35vh;
     background-repeat: no-repeat;
@@ -1957,10 +1957,10 @@ html, body {
 
   }
 
-  .tictactoe:hover {
+  .handcrafted:hover {
     /*width: 15vw;
     height: 36vh;*/
-    background-image: url(images/tictactoe-hover2.png);
+    background-image: url(images/handcraftedhover.png);
     background-size: cover;
 
   }
